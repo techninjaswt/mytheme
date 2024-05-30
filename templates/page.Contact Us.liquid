@@ -1,0 +1,192 @@
+<style>
+  .Container{
+    width: 100%;
+    padding: 0;
+    
+  }
+.PageHeader {
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    height: 200px; 
+    position: relative;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.PageHeader:before {
+    content: "";
+    background-color: #f6f1f1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+      
+.SectionHeader {
+    text-align: center;
+    color: #fff;
+    z-index: 1; 
+}
+
+.SectionHeader__Heading {
+    font-family: 'Arial', sans-serif; 
+    font-size: 36px; 
+    margin: 0; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+  h1.SectionHeader__Heading.Heading.u-h1 {
+    color: #c26a72;
+}
+
+  .ContactSection {
+    display: flex;
+    justify-content: space-around;
+     max-width: 1400px;
+     margin: 0 auto;
+}
+
+.ContactInfo, .ContactForm {
+    flex-basis: 45%; 
+}
+
+.ContactInfo h2, .ContactForm h2 {
+    margin-top: 0;
+}
+
+
+  
+.ContactForm form {
+    display: flex;
+    flex-direction: column;
+}
+
+.ContactForm label {
+    margin-top: 10px;
+}
+
+.ContactForm input,
+.ContactForm textarea {
+    margin-bottom: 10px;
+}
+
+.ContactForm button {
+    align-self: flex-end;
+}
+.ContactSection-wrapper{
+  max-width: 100%;
+}
+.Footer--withMargin {
+    margin-top: 0px;
+}
+
+  .ContactInfo-wrapper{
+    
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    padding: 80px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+  .ContactInfo {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 
+    background-color: white;
+    z-index: 1;
+}
+  .ContactSection-main{
+    
+    
+  }
+  .contact-content {
+    margin-bottom: 30px;
+}
+
+  .map{
+    width: 100%;
+    padding: 50px 0;
+        max-width: 1400px;
+    margin: 0 auto;
+  }
+  h2.contact-info-header {
+    font-size: 25px;
+}
+
+  .contact-info-content{
+    font-size: 19px;
+  }
+   .contact-info-content p {
+    font-size: 18px;
+  }
+  .fab-logo{
+    margin-right: 7px;
+  }
+
+  h1.SectionHeader__Heading.Heading.u-h1 {
+  
+    font-size: 50px;
+}
+@media (max-width: 768px) {
+    .PageHeader {
+        height: 200px; 
+    }
+  .ContactSection {
+    
+    flex-direction: column;
+}
+  h1.SectionHeader__Heading.Heading.u-h1 {
+    font-size: 40px;
+}
+  .ContactInfo-wrapper {
+   padding-top: 15px;
+}
+}
+
+</style>
+
+<div class="Container">
+  
+  <header class="PageHeader">
+    <div class="SectionHeader SectionHeader--center">
+      <h1 class="SectionHeader__Heading Heading u-h1">{{ page.title }}</h1>
+    </div>
+  </header>
+
+  <div class="ContactSection-wrapper">
+    <section class="ContactSection">
+      <div class="ContactSection-main">
+         <div class="ContactInfo">
+           <div class="ContactInfo-wrapper">
+               <h2 class="contact-info-header">Contact Info</h2>
+                   <div class="contact-content">
+                     <h2 class="contact-info-content"><i class="fas fa-1x fa-envelope fab-logo"></i> Email</h2>
+                      <p><a href="mailto:info@skinfoodorganics.com">info@skinfoodorganics.com</a></p>
+                   </div>
+                      <div class="contact-content">
+                         <h2 class="contact-info-content"><i class=" fas  fa-1x fa-phone fab-logo"></i> Phone</h2>
+                      <p> (406) 871 8334 (call or text)</p>
+                      </div >
+                     <div class="contact-content">
+                       <h2 class="contact-info-content"><i class="fas fa-1x fa-map-marker-alt fab-logo"></i> Address</h2>
+                      <p>SkinFood Organics, LLC Whitefish, Montana, USA</p>
+                     </div>
+                 </div> 
+         </div>
+          </div>
+    <div class="ContactForm">
+        <span>{formbuilder:16987}</span>
+    </div>
+</section>
+
+  </div>
+  <section >
+<div class="map"> 
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d69181.5056438379!2d-114.42436657232284!3d48.450613382961194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x536669069d6a598d%3A0x7237c83c6ab9120b!2sSkinFood%20Organics!5e0!3m2!1sen!2sin!4v1707822918953!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+</div>
+    
+  </section>
+</div>

@@ -1,0 +1,174 @@
+{{ 'tabs-with-image.css' | asset_url | stylesheet_tag }}
+<sections>
+  <div class="page-width">
+    <div class="grid grid--2-col-desktop grid--1-col-tablet-down">
+      <div class="grid__items">
+        <div class="tab-container">
+          <div class="tab-button">
+            <button class="tablink btn active" onclick="openPage('tab1', this)" id="defaultOpen">
+              {{ section.settings['tab-1'] }}
+            </button>
+            <button class="tablink btn" onclick="openPage('tab2', this)">{{ section.settings['tab-2'] }}</button>
+            <button class="tablink btn" onclick="openPage('tab3', this)">{{ section.settings['tab-3'] }}</button>
+          </div>
+        </div>
+      
+          <div class="tab-content">
+            {% for block in section.blocks %}
+              {% if block.type == 'block-1' %}
+            <div id="tab1" class="tabcontent">
+                {% if block.settings.block-content-1 != blank %}
+                     {{ block.settings.block-content-1 }}
+                {% endif %}
+            </div>
+            {% elsif block.type == 'block-2' %}
+                <div id="tab2" class="tabcontent">
+                {% if block.settings.block-content-2 != blank %}
+                     {{ block.settings.block-content-2 }}
+                {% endif %}
+            </div>
+            {% elsif block.type == 'block-3' %}
+                 <div id="tab3" class="tabcontent">
+                   {% if block.settings.block-content-3 != blank %}
+                       {{ block.settings.block-content-3 }}
+                   {% endif %} 
+            </div>
+            {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      <div class="grid__items image-side">
+        <div class="media_container">
+          {% if section.settings.tab-image != blank %}
+          <img src="{{ section.settings.tab-image | img_url: 'master'  }}">
+            {% endif %}
+            {% if section.settings.image-text != blank %}
+          <div class="image-text">
+            {{ section.settings.image-text }}
+          </div>
+              {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</sections>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{% schema %}
+  {
+    "name": "Tabs With image",
+    "settings": [
+        {
+          "type": "image_picker",
+          "id": "tab-image",
+          "label": "Image"
+          
+        },
+        {
+           "type":"richtext",
+            "id":"image-text",
+            "label":"Text"
+        },
+        {
+            "type":"text",
+            "id":"tab-1",
+            "label":"Tab Name"
+          },
+          {
+              "type":"text",
+              "id":"tab-2",
+              "label":"Tab Name"
+          },
+          {
+              "type":"text",
+              "id":"tab-3",
+              "label":"Tab Name"
+          }
+    ],
+    "blocks":[
+      {
+        "type":"block-1",
+       "name":"block 1",
+        "limit": 1,
+        "settings":[
+           {
+              "type":"richtext",
+              "id":"block-content-1",
+              "label":"Content"
+          }
+        ]
+      },
+      {
+        "type":"block-2",
+       "name":"block 2",
+         "limit": 1,
+        "settings":[
+           {
+              "type":"richtext",
+              "id":"block-content-2",
+              "label":"Content"
+          }
+        ]
+      },
+      {
+        "type":"block-3",
+       "name":"block 3",
+         "limit": 1,
+        "settings":[
+           {
+              "type":"richtext",
+              "id":"block-content-3",
+              "label":"Content"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"Tabs With Image"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+<script>
+  function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+
+   $(document).ready(function(){
+      $('.tablink').on('click', function(){
+          $('.tablink').removeClass('active');
+          $(this).addClass('active');
+      })
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+

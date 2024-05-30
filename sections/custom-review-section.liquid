@@ -1,0 +1,84 @@
+<style>
+
+  .judgeme-column1 {
+    margin-top: 0px !important;
+    padding-top: 30px !important;
+}
+  </style>
+
+<div class="Container judgeme-container ">
+    <div class="judgeme-container-wrapper">
+    <div class="judgeme-column1">
+  <h2 data-pf-type="Heading" class="sc-dFtzxp icSyEj pf-111_">
+    <span data-pf-type="Text" class="sc-cLpAjG dTtSfA pf-113_">{{ section.settings.title }}</span>
+  </h2>
+    </div>
+    <div  class="judgeme-column2">
+    {% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: true, product: product %}
+    </div>
+    </div>
+  </div>
+
+{% schema %}
+  {
+    "name": "custom-review-section",
+    "settings": [
+     {
+  "type": "text",
+  "id": "title",
+  "label": "title"
+ 
+}
+    ],
+    
+  "presets":[
+      {
+        "name":"custom-review-section"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+<style>
+  .judgeme-column1 {
+    font-size: 60px;
+    font-family: Karla;
+    margin-top: 31px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding-top: 0;
+    color: #c26a72;
+    text-align: center;
+}
+.judgeme-container{
+  background-color: #f1e6e6;
+    padding-bottom: 30px;
+}
+.judgeme-container-wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.jdgm-widget.jdgm-preview-badge {
+    
+    text-align: left;
+}
+
+
+  
+  @media screen and (max-width: 1000px) {
+
+  .judgeme-column1 {
+    font-size: 24px;  
+    margin-top: 31px;
+    padding-top: 22px; 
+}
+}
+</style>
