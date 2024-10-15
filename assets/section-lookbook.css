@@ -1,0 +1,277 @@
+.lookbook {
+  overflow: hidden;
+}
+.lookbook__heading + .lookbook__wrapper, .lookbook__subheading + .lookbook__wrapper {
+  margin-top: 3.2rem;
+}
+.lookbook__slides {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  min-height: 30rem;
+  height: 100vh;
+  max-height: 65rem;
+}
+@media screen and (min-width: 750px) {
+  .lookbook__slides {
+    max-height: 108rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .lookbook__slides {
+    height: 100vh;
+    max-height: 108rem;
+    padding-right: 20rem;
+  }
+}
+.lookbook__slide {
+  flex: none;
+  min-height: 30rem;
+  height: 100vh;
+  max-height: 65rem;
+}
+@media screen and (min-width: 750px) {
+  .lookbook__slide {
+    max-height: 108rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .lookbook__slide {
+    height: 100vh;
+    max-height: 108rem;
+  }
+}
+.lookbook__slide .placeholder-svg {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1);
+}
+.lookbook__slide-content {
+  width: 100%;
+  height: 100%;
+}
+.lookbook__slide-image {
+  flex: none;
+  width: 100%;
+  height: 100%;
+}
+.lookbook__slide--slide {
+  position: relative;
+  width: calc(100% + 10rem);
+}
+@media screen and (min-width: 576px) {
+  .lookbook__slide--slide {
+    width: 50rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .lookbook__slide--slide {
+    width: 72.6rem;
+  }
+}
+.lookbook__slide--slide .lookbook__overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(var(--color-overlay), 0.16);
+  transition: opacity var(--duration-default);
+  z-index: 2;
+}
+@media screen and (min-width: 1200px) {
+  .lookbook__slide--slide .lookbook__overlay {
+    opacity: 0;
+  }
+}
+.lookbook__slide--slide .lookbook__button {
+  position: absolute;
+  left: 3.2rem;
+  bottom: 3.2rem;
+  transition: all var(--duration-default);
+  z-index: 3;
+}
+@media screen and (min-width: 1200px) {
+  .lookbook__slide--slide .lookbook__button {
+    opacity: 0;
+  }
+}
+.lookbook__slide--slide .lookbook__link-overlay:empty {
+  position: absolute;
+  inset: 0;
+  display: block;
+  z-index: 2;
+}
+.lookbook__slide--slide:hover .lookbook__overlay, .lookbook__slide--slide:hover .lookbook__button {
+  opacity: 1;
+}
+.lookbook__slide--slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.lookbook__slide--text {
+  display: flex;
+  padding-inline: 3.2rem;
+  width: 85%;
+}
+.lookbook__slide--text::-webkit-scrollbar {
+  width: 0.4rem;
+}
+.lookbook__slide--text::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--color-border));
+  border-radius: 2rem;
+}
+@media screen and (min-width: 576px) {
+  .lookbook__slide--text {
+    min-width: 50.6rem;
+    width: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .lookbook__slide--text {
+    padding-inline: 6.4rem;
+    min-width: 80.6rem;
+  }
+}
+.lookbook__slide--text.lookbook__slide--top {
+  align-items: flex-start;
+}
+.lookbook__slide--text.lookbook__slide--center {
+  align-items: center;
+}
+.lookbook__slide--text.lookbook__slide--bottom {
+  align-items: flex-end;
+}
+.lookbook__slide--text.color-background-1:first-child {
+  padding-left: 0;
+}
+.lookbook__slide--text.color-background-1:first-child .lookbook__image-wrapper {
+  left: 0;
+}
+.lookbook__slide--text .lookbook__subheading {
+  max-width: 53.2rem;
+}
+.lookbook__slide--text .lookbook__heading {
+  max-width: 61.8rem;
+}
+.lookbook__slide--text .lookbook__heading + .lookbook__text {
+  margin-top: 2.4rem;
+}
+.lookbook__slide--text .lookbook__heading + .lookbook__button {
+  margin-top: 2.4rem;
+}
+@media screen and (min-width: 1200px) {
+  .lookbook__slide--text .lookbook__heading + .lookbook__button {
+    margin-top: 3.2rem;
+  }
+}
+.lookbook__slide--text .lookbook__text {
+  max-width: 53.2rem;
+}
+.lookbook__slide--text .lookbook__text__bottom {
+  padding-top: 1.6rem;
+}
+.lookbook__slide--text .lookbook__text + .lookbook__button {
+  margin-top: 2.4rem;
+}
+@media screen and (min-width: 1200px) {
+  .lookbook__slide--text .lookbook__text + .lookbook__button {
+    margin-top: 3.2rem;
+  }
+}
+.lookbook__slide--text .lookbook__slide-content {
+  padding-block: calc(var(--header-height) + 3.2rem);
+  height: auto;
+}
+@media screen and (min-width: 1200px) {
+  .lookbook__slide--text .lookbook__slide-content {
+    padding-block: calc(var(--header-height) + 3.2rem);
+  }
+}
+.lookbook__slide--image {
+  width: 75rem;
+}
+@media screen and (min-width: 1200px) {
+  .lookbook__slide--image {
+    width: 125.6rem;
+  }
+}
+.lookbook__slide--image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.lookbook__image-wrapper {
+  position: absolute;
+  left: 3.2rem;
+  bottom: 3.2rem;
+}
+@media screen and (min-width: 1200px) {
+  .lookbook__image-wrapper {
+    left: 6.4rem;
+    bottom: 6.4rem;
+  }
+}
+.lookbook__image--bottom {
+  max-width: 12rem;
+}
+@media screen and (min-width: 1200px) {
+  .lookbook__image--bottom {
+    max-width: unset;
+  }
+}
+
+.shopify-section-header-always-sticky:not(.shopify-section-header-hidden) ~ main .lookbook__slides {
+  top: var(--header-height) !important;
+}
+
+@media screen and (min-width: 1200px) {
+  .shopify-section-header-always-sticky:not(.shopify-section-header-hidden) ~ main .lookbook__slide {
+    height: calc(100vh - var(--header-height));
+  }
+}
+
+.no-js .lookbook__slides {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+@media (prefers-color-scheme: light) {
+  .lookbook__image--bottom {
+    display: block;
+  }
+  .lookbook__image--bottom-dark {
+    display: none;
+  }
+  .lookbook__image--bottom:only-child {
+    display: block !important;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .lookbook__image--bottom {
+    display: none;
+  }
+  .lookbook__image--bottom-dark {
+    display: block;
+  }
+  .lookbook__image--bottom:only-child {
+    display: block !important;
+  }
+}
+[data-scheme=light] .lookbook__image--bottom {
+  display: block;
+}
+[data-scheme=light] .lookbook__image--bottom-dark {
+  display: none;
+}
+[data-scheme=light] .lookbook__image--bottom:only-child {
+  display: block !important;
+}
+
+[data-scheme=dark] .lookbook__image--bottom {
+  display: none;
+}
+[data-scheme=dark] .lookbook__image--bottom-dark {
+  display: block;
+}
+[data-scheme=dark] .lookbook__image--bottom:only-child {
+  display: block !important;
+}

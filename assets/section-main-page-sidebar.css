@@ -1,0 +1,122 @@
+.page__wrapper {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+@media screen and (min-width: 1200px) {
+  .page__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6.4rem;
+  }
+}
+.page__wrapper--left {
+  flex-direction: row-reverse;
+}
+.page-header {
+  margin: 0;
+}
+
+.template-page-sidebar .rte {
+  max-width: 79.3rem;
+}
+
+.sidebar {
+  flex: none;
+  width: 100%;
+  max-height: 100vh;
+  border-radius: 0.4rem;
+  transition: top var(--duration-default);
+  overflow: auto;
+}
+.sidebar::-webkit-scrollbar {
+  width: 0.4rem;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--color-border));
+  border-radius: 2rem;
+}
+@media screen and (min-width: 1200px) {
+  .sidebar {
+    position: sticky;
+    top: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sidebar--small {
+    max-width: 36rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .sidebar--small {
+    max-width: 50rem;
+  }
+  .sidebar--small .sidebar__text {
+    max-width: 90%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sidebar--medium {
+    max-width: 50rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .sidebar--medium {
+    max-width: 74.2rem;
+  }
+  .sidebar--medium .sidebar__text {
+    max-width: 66.2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sidebar--large {
+    max-width: 70rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .sidebar--large {
+    max-width: 100rem;
+  }
+  .sidebar--large .sidebar__text {
+    max-width: 80rem;
+  }
+}
+.sidebar__wrapper {
+  padding: 4rem;
+}
+.sidebar__heading {
+  margin-bottom: 2.4rem;
+}
+.sidebar__text p {
+  margin-block: 1.6rem;
+}
+.sidebar__text ol,
+.sidebar__text ul {
+  margin: 0;
+  padding-inline-start: 1.8rem;
+}
+.sidebar__text ol li + li,
+.sidebar__text ul li + li {
+  margin-top: 1.6rem;
+}
+.sidebar__text a {
+  transition: opacity var(--duration-default);
+  text-underline-offset: 0.2rem;
+}
+.sidebar__text a:hover {
+  opacity: 0.7;
+}
+.sidebar__button {
+  margin-top: 2.4rem;
+}
+@media screen and (min-width: 1200px) {
+  .sidebar__button {
+    margin-top: 3.2rem;
+  }
+}
+
+.shopify-section-header-sticky:not(.shopify-section-header-hidden) ~ main .sidebar {
+  top: calc(var(--header-height) + 1rem);
+}

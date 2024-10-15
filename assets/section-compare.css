@@ -1,0 +1,255 @@
+.compare {
+  color: #F9F9F9;
+}
+.compare__content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2.4rem;
+}
+@media screen and (min-width: 750px) {
+  .compare__content {
+    gap: 3.2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .compare__content {
+    gap: 4.8rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .compare__content_no-heading {
+    gap: 4rem;
+  }
+}
+.compare__top {
+  align-self: center;
+}
+.compare__subtitle {
+  margin: 0;
+}
+.compare__subtitle + .compare__content {
+  margin-top: 1rem;
+}
+.compare__button {
+  grid-row: 2;
+  grid-column: span 2;
+}
+@media screen and (min-width: 576px) {
+  .compare__button {
+    grid-row: unset;
+    grid-column: 2;
+    margin-left: auto;
+    align-self: flex-end;
+  }
+}
+@media screen and (max-width: 575px) {
+  .compare__top + .compare__button {
+    grid-row: 3;
+  }
+}
+.compare__default {
+  grid-column: span 2;
+  display: flex;
+  gap: 0.5rem;
+  max-height: 64rem;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+.compare__default svg {
+  width: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 990px) {
+  .compare__default svg {
+    height: 20rem;
+  }
+}
+.compare__title {
+  width: 100%;
+  margin: 0;
+}
+.compare__container {
+  grid-column: span 2;
+  position: relative;
+  max-height: 28rem;
+  overflow: hidden;
+}
+@media screen and (min-width: 750px) {
+  .compare__container {
+    max-height: 35rem;
+  }
+}
+@media screen and (min-width: 990px) {
+  .compare__container {
+    max-height: 45rem;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .compare__container {
+    max-height: 64rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .compare__container {
+    max-height: 84rem;
+  }
+}
+.compare img-comparison-slider.rendered {
+  border-radius: 0.4rem;
+  outline: none;
+  width: 100%;
+}
+.compare__figure {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.compare__figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  height: 28rem;
+  object-fit: cover;
+}
+@media screen and (min-width: 750px) {
+  .compare__figure img {
+    height: auto;
+    max-height: 35rem;
+  }
+}
+@media screen and (min-width: 990px) {
+  .compare__figure img {
+    max-height: 45rem;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .compare__figure img {
+    max-height: 64rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .compare__figure img {
+    max-height: 84rem;
+  }
+}
+.compare__text {
+  position: absolute;
+  max-width: min-content;
+  color: #F9F9F9;
+  word-wrap: break-word;
+}
+@media screen and (min-width: 1200px) {
+  .compare__text {
+    max-width: 28.5rem;
+  }
+}
+.compare__text--left {
+  left: 2rem;
+  bottom: 2rem;
+}
+@media screen and (min-width: 1200px) {
+  .compare__text--left {
+    left: 4rem;
+    bottom: 4rem;
+  }
+}
+.compare__text--right {
+  right: 2rem;
+  bottom: 2rem;
+}
+@media screen and (min-width: 1200px) {
+  .compare__text--right {
+    right: 4rem;
+    bottom: 4rem;
+  }
+}
+.compare .icon-handle {
+  width: 3rem;
+  overflow: visible;
+}
+.compare .icon-handle path {
+  transition: transform var(--duration-default);
+}
+.compare .icon-handle--active path:first-child {
+  transform: translateX(-0.5rem);
+}
+.compare .icon-handle--active path:last-child {
+  transform: translateX(0.5rem);
+}
+.compare .icon-handle:hover path:first-child {
+  transform: translateX(-0.5rem);
+}
+.compare .icon-handle:hover path:last-child {
+  transform: translateX(0.5rem);
+}
+@media screen and (min-width: 990px) {
+  .compare .icon-handle {
+    width: auto;
+  }
+}
+
+.divider:hover {
+  opacity: 0.5;
+}
+
+.no-js .compare img-comparison-slider {
+  position: relative;
+  display: flex;
+  visibility: visible;
+  height: 28rem;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+@media screen and (min-width: 750px) {
+  .no-js .compare img-comparison-slider {
+    height: 35rem;
+  }
+}
+@media screen and (min-width: 990px) {
+  .no-js .compare img-comparison-slider {
+    height: 45rem;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .no-js .compare img-comparison-slider {
+    height: 64rem;
+  }
+}
+.no-js .compare img-comparison-slider::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  height: 100%;
+  width: 0.5rem;
+  background-color: rgb(var(--color-background));
+  transform: translate(-50%, -50%);
+}
+.no-js .compare img-comparison-slider .compare__figure {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 50%;
+  width: 50%;
+}
+.no-js .compare img-comparison-slider .compare__figure[slot=second] {
+  left: 50%;
+  right: 0;
+  display: block;
+}
+.no-js .compare img-comparison-slider .compare__figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.no-js .compare .icon-handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}

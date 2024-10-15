@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-order",
+      "settings": {
+        "heading_addresses": "Some heading for empty address placeholder",
+        "text_addresses": "Some text for empty address placeholder",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "xs",
+        "padding_bottom": "no-indent"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

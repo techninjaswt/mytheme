@@ -1,0 +1,480 @@
+{{ 'section-instagram-collage.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+	{% render 'section-padding' %}
+{%- endstyle -%}
+
+{% liquid
+	if section.settings.image_ratio == 'landscape'
+		assign padding_bottom = 70
+	endif
+	if section.settings.image_ratio == 'portrait'
+		assign padding_bottom = 140
+	endif
+	if section.settings.image_ratio == 'square'
+		assign padding_bottom = 100
+	endif
+%}
+
+<div class="instagram-collage parallax-img-container section-{{ section.id }}-padding">
+	<div class="container">
+		{%- if section.settings.subheading != blank and section.settings.heading != blank -%}
+      <div class="instagram-collage__subheading subtitle">
+        {{ section.settings.subheading }}
+      </div>
+    {%- endif -%}
+		<div class="instagram-collage__content {% if section.settings.heading == blank %} instagram-collage__content_no-heading {% endif %}">
+			{%- if section.settings.subheading != blank or section.settings.heading != blank -%}
+				<div class="instagram-collage__top">
+					{%- if section.settings.subheading != blank and section.settings.heading == blank -%}
+						<div class="instagram-collage__subheading subtitle">
+							{{ section.settings.subheading }}
+						</div>
+					{%- endif -%}
+					{%- if section.settings.heading != blank -%}
+						<h2 class="{{ section.settings.heading_size }} instagram-collage__title title--section {{ section.settings.heading_size }}">
+							{{ section.settings.heading }}
+						</h2>
+					{% endif %}
+				</div>
+			{% endif %}
+			{%- if section.settings.show_description != blank -%}
+				<a
+					{% if section.settings.button_link %}
+						href="{{ section.settings.button_link }}"
+					{% endif %}
+					class="instagram-collage__link button button--primary button--primary-size button--{{ section.settings.button_style }} focus-inset"
+					{% if section.settings.button_link == blank %}
+						aria-disabled="true"
+					{% endif %}
+					aria-label="{{ section.settings.button_label | escape }}"
+				>
+					{% render 'icon-pack', icon: section.settings.icon %}
+					{{ section.settings.button_label | escape }}
+				</a>
+			{%- endif -%}
+
+			<div class="instagram-collage__sliders instagram-collage__sliders--{{ section.settings.column_to_show }}">
+				{%- if section.settings.show_account -%}
+					<{% if section.settings.link_account == blank %}div{% else %}a{% endif %}
+						class="instagram-collage__account"
+						style="padding-bottom: {{ padding_bottom }}%"
+						{% if section.settings.link_account != blank %}href={{ section.settings.link_account }}{% endif %}
+					>
+						{%- if section.settings.name_account != blank -%}
+							<span class="instagram-collage__account-text">
+								{{- section.settings.name_account | escape -}}
+							</span>
+						{%- endif -%}
+					</{% if section.settings.link_account == blank %}div{% else %}a{% endif %}>
+				{%- endif -%}
+
+				{%- if section.settings.section_type == 'slideshow_1' -%}
+					{% assign sliders = section.blocks.size | divided_by: 2.0 | ceil %}
+					{% assign range = (1..sliders) %}
+
+					{% for slider in range %}
+						{% assign part = forloop.index | times: 2 %}
+						{% assign prev = forloop.index | minus: 1 | times: 2 %}
+						{% assign modulo = forloop.index | modulo: 2 %}
+
+						<div class="instagram-collage__slider swiper {% if modulo == 1 %}js-instagram-collage{% else %}js-instagram-collage-slow{% endif %}" data-duration="{% if modulo == 1 %}{{ section.settings.speed_slider_1 }}{% else %}{{ section.settings.speed_slider_2 }}{% endif %}">
+							<div class="swiper-wrapper">
+								{% for block in section.blocks %}
+									{% if forloop.index > prev and forloop.index <= part %}
+										{% render 'instagram-collage-item', 
+											image: block.settings.image, 
+											padding_bottom: padding_bottom
+										%}
+									{% endif %}
+								{% endfor %}
+							</div>
+						</div>
+					{% endfor %}
+				{%- elsif section.settings.section_type == 'slideshow_2' -%}
+					{% assign sliders = section.blocks.size | divided_by: 3.0 | ceil %}
+					{% assign range = (1..sliders) %}
+
+					{% for slider in range %}
+						{% assign part = forloop.index | times: 3 %}
+						{% assign prev = forloop.index | minus: 1 | times: 3 %}
+						{% assign modulo = forloop.index | modulo: 2 %}
+
+						<div class="instagram-collage__slider swiper {% if modulo == 1 %}js-instagram-collage{% else %}js-instagram-collage-slow{% endif %}" data-duration="{% if modulo == 1 %}{{ section.settings.speed_slider_1 }}{% else %}{{ section.settings.speed_slider_2 }}{% endif %}">
+							<div class="swiper-wrapper">
+								{% for block in section.blocks %}
+									{% if forloop.index > prev and forloop.index <= part %}
+										{% render 'instagram-collage-item', image: block.settings.image, padding_bottom: padding_bottom %}
+									{% endif %}
+								{% endfor %}
+							</div>
+						</div>
+					{% endfor %}
+				{%- else -%}
+					{%- for block in section.blocks -%}
+						{% render 'instagram-collage-item', image: block.settings.image, padding_bottom: padding_bottom %}
+					{%- endfor -%}
+				{%- endif -%}
+			</div>
+		</div>
+	</div>
+</div>
+
+{% schema %}
+{
+	"name": "t:sections.instagram-collage.name",
+	"tag": "section",
+	"class": "instagram-collage-section spaced-section",
+	"max_blocks": 20,
+	"enabled_on": {
+    "templates": ["*"]
+  },
+	"settings": [
+		{
+			"type": "select",
+			"id": "section_type",
+			"options": [
+				{
+					"value": "slideshow_1",
+					"label": "t:sections.instagram-collage.settings.section_type.options__1.label"
+				},
+				{
+					"value": "slideshow_2",
+					"label": "t:sections.instagram-collage.settings.section_type.options__2.label"
+				},
+				{
+					"value": "static",
+					"label": "t:sections.instagram-collage.settings.section_type.options__3.label"
+				}
+			],
+			"default": "slideshow_1",
+			"label": "t:sections.instagram-collage.settings.section_type.label"
+		},
+		{
+			"type": "text",
+			"id": "subheading",
+			"default": "Subheading",
+			"label": "t:sections.all.subheading.label"
+		},
+		{
+			"type": "text",
+			"id": "heading",
+			"default": "Heading",
+			"label": "t:sections.all.heading.label"
+		},
+		{
+			"type": "select",
+			"id": "heading_size",
+			"options": [
+				{
+					"value": "h3",
+					"label": "t:sections.all.heading_size.options__1.label"
+				},
+				{
+					"value": "h2",
+					"label": "t:sections.all.heading_size.options__2.label"
+				},
+				{
+					"value": "h1",
+					"label": "t:sections.all.heading_size.options__3.label"
+				}
+			],
+			"default": "h2",
+			"label": "t:sections.all.heading_size.label"
+		},
+		{
+			"type": "range",
+			"id": "speed_slider_1",
+			"min": 100,
+			"max": 1000,
+			"step": 100,
+			"default": 500,
+			"unit": "ms",
+			"label": "t:sections.instagram-collage.settings.speed_slider_1.label"
+		},
+		{
+			"type": "range",
+			"id": "speed_slider_2",
+			"min": 100,
+			"max": 1000,
+			"step": 100,
+			"default": 700,
+			"unit": "ms",
+			"label": "t:sections.instagram-collage.settings.speed_slider_2.label"
+		},
+		{
+			"type": "range",
+			"id": "column_to_show",
+			"min": 3,
+			"max": 6,
+			"step": 1,
+			"default": 6,
+			"label": "t:sections.instagram-collage.settings.column_to_show.label"
+		},
+		{
+			"type": "select",
+			"id": "image_ratio",
+			"options": [
+				{
+					"value": "landscape",
+					"label": "t:sections.all.card.image_ratio.options__1.label"
+				},
+				{
+					"value": "portrait",
+					"label": "t:sections.all.card.image_ratio.options__2.label"
+				},
+				{
+					"value": "square",
+					"label": "t:sections.all.card.image_ratio.options__3.label"
+				}
+			],
+			"default": "square",
+			"label": "t:sections.all.card.image_ratio.label"
+		},
+		{
+			"type": "header",
+			"content": "t:sections.instagram-collage.settings.header__1.label"
+		},
+		{
+			"type": "checkbox",
+			"id": "show_account",
+			"default": true,
+			"label": "t:sections.instagram-collage.settings.show_description.label"
+		},
+		{
+			"type": "text",
+			"id": "name_account",
+			"default": "Text",
+			"label": "t:sections.all.text.label"
+		},
+		{
+			"type": "url",
+			"id": "link_account",
+			"default": "/collections/all",
+			"label": "t:sections.instagram-collage.settings.link_account.label"
+		},
+		{
+			"type": "header",
+			"content": "t:sections.all.button.header_button.content"
+		},
+		{
+			"type": "checkbox",
+			"id": "show_description",
+			"default": true,
+			"label": "t:sections.all.button.button_show.label"
+		},
+		{
+			"type": "text",
+			"id": "button_label",
+			"default": "Follow",
+			"label": "t:sections.all.button.button_label.label"
+		},
+		{
+			"type": "url",
+			"id": "button_link",
+			"label": "t:sections.all.button.button_link.label"
+		},
+		{
+			"type": "select",
+			"id": "button_style",
+			"options": [
+				{
+					"value": "primary",
+					"label": "t:sections.all.button.button_style.options__1.label"
+				},
+				{
+					"value": "secondary",
+					"label": "t:sections.all.button.button_style.options__2.label"
+				},
+				{
+          "value": "tertiary",
+          "label": "t:sections.all.button.button_style.options__3.label"
+        }
+			],
+			"default": "primary",
+			"label": "t:sections.all.button.button_style.label"
+		},
+		{
+			"type": "select",
+			"id": "icon",
+			"options": [
+				{
+					"value": "none",
+					"label": "t:sections.all.icon_pack.options__1.label"
+				},
+				{
+					"value": "facebook",
+					"label": "t:sections.all.icon_pack.options__29.label"
+				},
+				{
+					"value": "instagram",
+					"label": "t:sections.all.icon_pack.options__39.label"
+				},
+				{
+					"value": "pinterest",
+					"label": "t:sections.all.icon_pack.options__56.label"
+				},
+				{
+					"value": "snapchat",
+					"label": "t:sections.all.icon_pack.options__75.label"
+				},
+				{
+					"value": "tik_tok",
+					"label": "t:sections.all.icon_pack.options__81.label"
+				},
+				{
+					"value": "tumblr",
+					"label": "t:sections.all.icon_pack.options__84.label"
+				},
+				{
+					"value": "twitter",
+					"label": "t:sections.all.icon_pack.options__85.label"
+				},
+				{
+					"value": "vimeo",
+					"label": "t:sections.all.icon_pack.options__89.label"
+				},
+				{
+					"value": "youtube",
+					"label": "t:sections.all.icon_pack.options__91.label"
+				}
+			],
+			"default": "instagram",
+			"label": "t:sections.all.icon_pack.label"
+		},
+		{
+			"type": "header",
+			"content": "t:sections.all.section-padding.header.content"
+		},
+		{
+      "type": "select",
+      "id": "padding_top",
+      "options": [
+        {
+          "value": "no-indent",
+          "label": "t:sections.all.section-padding.options__1.label"
+        },
+        {
+          "value": "xs",
+          "label": "t:sections.all.section-padding.options__2.label"
+        },
+        {
+          "value": "s",
+          "label": "t:sections.all.section-padding.options__3.label"
+        },
+        {
+          "value": "m",
+          "label": "t:sections.all.section-padding.options__4.label"
+        },
+        {
+          "value": "l",
+          "label": "t:sections.all.section-padding.options__5.label"
+        },
+        {
+          "value": "xl",
+          "label": "t:sections.all.section-padding.options__6.label"
+        }
+      ],
+      "default": "m",
+      "label": "t:sections.all.section-padding.padding_top.label"
+    },
+    {
+      "type": "select",
+      "id": "padding_bottom",
+      "options": [
+        {
+          "value": "no-indent",
+          "label": "t:sections.all.section-padding.options__1.label"
+        },
+        {
+          "value": "xs",
+          "label": "t:sections.all.section-padding.options__2.label"
+        },
+        {
+          "value": "s",
+          "label": "t:sections.all.section-padding.options__3.label"
+        },
+        {
+          "value": "m",
+          "label": "t:sections.all.section-padding.options__4.label"
+        },
+        {
+          "value": "l",
+          "label": "t:sections.all.section-padding.options__5.label"
+        },
+        {
+          "value": "xl",
+          "label": "t:sections.all.section-padding.options__6.label"
+        }
+      ],
+      "default": "m",
+      "label": "t:sections.all.section-padding.padding_bottom.label"
+    }
+	],
+	"blocks": [
+		{
+			"type": "instagram-collage_image",
+			"name": "t:sections.instagram-collage.blocks.instagram-collage_image.name",
+			"settings": [
+				{
+					"type": "image_picker",
+					"id": "image",
+					"label": "t:sections.all.image.label"
+				}
+			]
+		}
+	],
+	"presets": [
+		{
+			"name": "t:sections.instagram-collage.presets.name",
+			"blocks": [
+				{
+					"type": "instagram-collage_image"
+				},
+				{
+					"type": "instagram-collage_image"
+				},
+				{
+					"type": "instagram-collage_image"
+				},
+				{
+					"type": "instagram-collage_image"
+				},
+				{
+					"type": "instagram-collage_image"
+				},
+				{
+					"type": "instagram-collage_image"
+				},
+				{
+					"type": "instagram-collage_image"
+				},
+				{
+					"type": "instagram-collage_image"
+				},
+				{
+					"type": "instagram-collage_image"
+				},
+				{
+					"type": "instagram-collage_image"
+				},
+				{
+					"type": "instagram-collage_image"
+				},
+				{
+					"type": "instagram-collage_image"
+				},
+				{
+					"type": "instagram-collage_image"
+				},
+				{
+					"type": "instagram-collage_image"
+				},
+				{
+					"type": "instagram-collage_image"
+				}
+			]
+		}
+	]
+}
+{% endschema %}

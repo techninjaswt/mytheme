@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-addresses",
+      "settings": {
+        "heading": "Nessun indirizzo salvato",
+        "text": "Aggiungi un nuovo indirizzo per completare il tuo profilo.",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "xs",
+        "padding_bottom": "no-indent"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

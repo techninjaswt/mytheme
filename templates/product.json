@@ -1,0 +1,112 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h3"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "description": ""
+          }
+        },
+        "text_mbE6Tb": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Composition: <\/strong>{{ product.metafields.custom.composition.value }}<\/p><p><strong>Roll Height: <\/strong>{{ product.metafields.custom.roll_height.value }} Cm<\/p><p><strong>Weight: <\/strong>{{ product.metafields.custom.weight.value }} g\/m²<\/p>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_quantity": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "wishlist_hero_custom_product_button_396eyV": {
+          "type": "shopify:\/\/apps\/wishlist-hero\/blocks\/custom-product-button\/a9a5079b-59e8-47cb-b659-ecf1c60b9b72",
+          "settings": {
+            "displayButtonMode": "~",
+            "contentAlignment": "center",
+            "buttonAlignment": "center",
+            "buttonFullwidth": true,
+            "removeBoxShadowAndBorder": false,
+            "horizontalPadding": 20,
+            "iconTopOffset": 0,
+            "addedCssClassNames": "",
+            "addedContainerStyles": ""
+          }
+        },
+        "dropdown_information_6DLjWf": {
+          "type": "dropdown_information",
+          "settings": {
+            "characteristics": false,
+            "heading": "Caratteristiche",
+            "description": "<p><\/p><p><\/p>",
+            "button_show": false,
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "description",
+        "text_mbE6Tb",
+        "variant_picker",
+        "buy_buttons",
+        "wishlist_hero_custom_product_button_396eyV",
+        "dropdown_information_6DLjWf"
+      ],
+      "settings": {
+        "desktop_alignment": "right",
+        "mobile_alignment": "before",
+        "gallery_type": "thumbs_aside",
+        "image_fit": "cover",
+        "image_fit_modal": "contain",
+        "enable_autoheight": false,
+        "columns_desktop": "2"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "color_scheme": "background-1",
+        "heading": "You May Also Like",
+        "heading_size": "h2",
+        "products_limit": 6,
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_collection": true,
+        "show_desc": false,
+        "columns_mobile": "1",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations"
+  ]
+}

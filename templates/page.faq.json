@@ -1,0 +1,380 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "rich_text_Ywdjzk": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_VN3zee": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Domande Frequenti"
+          }
+        },
+        "heading_Jpi4Hf": {
+          "type": "heading",
+          "settings": {
+            "heading": "FAQ",
+            "heading_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_VN3zee",
+        "heading_Jpi4Hf"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "xs",
+        "padding_bottom": "xs"
+      }
+    },
+    "collapsible_content_xphmeM": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion_b7pg6p": {
+          "type": "accordion",
+          "settings": {
+            "question": "QUANTITA' MINIMA ORDINABILE?",
+            "answer": "<p>Non è richiesta una quantità minima per ordinare. Tuttavia, poiché non offriamo il servizio taglio, la quantità minima ordinabile è la lunghezza più piccola disponibile sulla pagina del prodotto e dipende da ogni riferimento\/colore.<\/p>"
+          }
+        },
+        "accordion_XcefNP": {
+          "type": "accordion",
+          "settings": {
+            "question": "E' POSSIBILE ORDINARE CAMPIONI?",
+            "answer": "<p>Tutti i nostri tessuti vengono venduti al metro. La quantità minima ordinabile è di 1 metro per articolo.<\/p>"
+          }
+        },
+        "accordion_jFALFh": {
+          "type": "accordion",
+          "settings": {
+            "question": "QUALE E' LA DIMENSIONE DEI CAMPIONI?",
+            "answer": "<p>I campioni di tessuto sono di dimensioni 14x14 cm.<\/p>"
+          }
+        },
+        "accordion_zATGc9": {
+          "type": "accordion",
+          "settings": {
+            "question": "OFFRITE TESSUTI DI METRATURA PICCOLA?",
+            "answer": "<p>Alcuni dei nostri tessuti sono disponibili anche in metrature più piccole. Controlla le opzioni disponibili nel menu a tendina di ogni prodotto.<\/p>"
+          }
+        },
+        "accordion_nETK9F": {
+          "type": "accordion",
+          "settings": {
+            "question": "COSA SONO I MATERIALI DEADSTOCK?",
+            "answer": "<p>I materiali deadstock sono tessuti e pellami di alta qualità che provengono dalle giacenze di magazzino di grandi aziende e manifatture italiane. Questi materiali vengono recuperati e offerti a prezzi accessibili per ridurre gli sprechi e promuovere la sostenibilità.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_b7pg6p",
+        "accordion_XcefNP",
+        "accordion_jFALFh",
+        "accordion_zATGc9",
+        "accordion_nETK9F"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "TESSUTI",
+        "heading_size": "h1",
+        "show_button": false,
+        "button_label": "Some label",
+        "button_link": "",
+        "button_style": "simple",
+        "padding_top": "s",
+        "padding_bottom": "s"
+      }
+    },
+    "collapsible_content_79pNT3": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion_zEa7Ry": {
+          "type": "accordion",
+          "settings": {
+            "question": "QAUNTITA' MINIMA ORDINABILE?",
+            "answer": "<p>L’unità minima di vendita è una pelle che può avere una dimensione variabile a seconda dell’articolo in oggetto dell'ordine.<\/p>"
+          }
+        },
+        "accordion_jmUkVt": {
+          "type": "accordion",
+          "settings": {
+            "question": "E' POSSIBILE ORDINARE CAMPIONI?",
+            "answer": "<p>Sì, è possibile ordinare campioni per valutare la qualità dei materiali prima di effettuare un ordine.<\/p>"
+          }
+        },
+        "accordion_7JXdfP": {
+          "type": "accordion",
+          "settings": {
+            "question": "QUAL E' LA DIMENSIONE DEI CAMPIONI?",
+            "answer": "<p>I campioni di pelle sono di dimensioni 6x6 cm.<\/p>"
+          }
+        },
+        "accordion_CyL9dk": {
+          "type": "accordion",
+          "settings": {
+            "question": "COSA SONO I MATERIALI DEADSTOCK?",
+            "answer": "<p>I materiali deadstock sono tessuti e pellami di alta qualità che provengono dalle giacenze di magazzino di grandi aziende e manifatture italiane. Questi materiali vengono recuperati e offerti a prezzi accessibili per ridurre gli sprechi e promuovere la sostenibilità.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_zEa7Ry",
+        "accordion_jmUkVt",
+        "accordion_7JXdfP",
+        "accordion_CyL9dk"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "PELLAMI",
+        "heading_size": "h1",
+        "show_button": false,
+        "button_label": "Some label",
+        "button_link": "",
+        "button_style": "simple",
+        "padding_top": "s",
+        "padding_bottom": "s"
+      }
+    },
+    "collapsible_content_AbzX7U": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion_gXeHBc": {
+          "type": "accordion",
+          "settings": {
+            "question": "COME POSSO EFFETTUARE UN ORDINE SU ZEROW?",
+            "answer": "<p>Per effettuare un ordine sul nostro sito, aggiungi i prodotti desiderati al carrello e procedi al checkout. Segui le istruzioni per completare l'acquisto.<\/p>"
+          }
+        },
+        "accordion_7XVG6m": {
+          "type": "accordion",
+          "settings": {
+            "question": "POSSO MODIFICARE O ANNULLARE UN ORDINE?",
+            "answer": "<p>Si, puoi effettuare modifiche al tuo ordine fino al momento dell'evasione dello stesso. Una volta evaso, non sarà più possibile modificarlo. Per richiedere modifiche al tuo ordine contattaci il prima possibile al numero +39 335 756 8941 oppure inviaci un'email all'indirizzo <a href=\"mailto:support@zerow.it\"><span style=\"text-decoration:underline\">support@zerow.it<\/span><\/a><\/p>"
+          }
+        },
+        "accordion_NDfp4A": {
+          "type": "accordion",
+          "settings": {
+            "question": "DOVE POSSO TROVARE IL RIEPILOGO DEL MIO ORDINE?",
+            "answer": "<p>Subito dopo la conclusione del tuo ordine, riceverai una conferma dettagliata per email.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_gXeHBc",
+        "accordion_7XVG6m",
+        "accordion_NDfp4A"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "COME EFFETTUARE UN ORDINE SU ZEROW",
+        "heading_size": "h2",
+        "show_button": false,
+        "button_label": "Some label",
+        "button_link": "",
+        "button_style": "simple",
+        "padding_top": "s",
+        "padding_bottom": "s"
+      }
+    },
+    "collapsible_content_WXkR7a": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion_imqxnX": {
+          "type": "accordion",
+          "settings": {
+            "question": "QUALI METODI DI PAGAMENTO ACCETTATE ?",
+            "answer": "<p>Accettiamo i principali metodi di pagamento, tra cui carte di credito\/debito e PayPal e bonifico bancario.<\/p>"
+          }
+        },
+        "accordion_jTwYqQ": {
+          "type": "accordion",
+          "settings": {
+            "question": "VIENE INVIATA UNA RICEVUTA DI AVVENUTO PAGAMENTO?",
+            "answer": "<p>Sì, verrà inviata una fattura finale subito dopo la spedizione della merce, entro due giorni dalla registrazione del pagamento.<\/p>"
+          }
+        },
+        "accordion_JX7xAj": {
+          "type": "accordion",
+          "settings": {
+            "question": "POSSO RICHIEDERE UNA FATTURA PER IL MIO ORDINE?",
+            "answer": "<p>Certo, puoi richiedere una fattura durante il processo di checkout indicandoci il vostro codice SDI o contattando il nostro servizio clienti a (support@zerow.it) dopo aver effettuato l'ordine.<\/p>"
+          }
+        },
+        "accordion_jGedYL": {
+          "type": "accordion",
+          "settings": {
+            "question": "POSSO PAGARE ALLA CONSEGNA? ",
+            "answer": "<p>Attualmento è non attivo il servizio di pagamento in controassegno.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_imqxnX",
+        "accordion_jTwYqQ",
+        "accordion_JX7xAj",
+        "accordion_jGedYL"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "PAGAMENTI",
+        "heading_size": "h2",
+        "show_button": false,
+        "button_label": "Some label",
+        "button_link": "",
+        "button_style": "simple",
+        "padding_top": "s",
+        "padding_bottom": "s"
+      }
+    },
+    "collapsible_content_b47L7h": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion_38UPiC": {
+          "type": "accordion",
+          "settings": {
+            "question": "COME POSSO TRACCIARE LA MIA SPEDIZIONE?",
+            "answer": "<p>E' possibile seguire lo stato delle spedizioni tramite il numero di identificazione (tracking number), che riceverai per email non appena la merce lascia il nostro magazzino. <\/p>"
+          }
+        },
+        "accordion_wnPhgn": {
+          "type": "accordion",
+          "settings": {
+            "question": "COME VENGONO CALCOLATE LE SPESE DI SPEDIZIONE? ",
+            "answer": "<p>Al momento del pagamento in base all'indirizzo di consegna e al peso dei materiali ordinati. Puoi visualizzare i costi esatti al momento del checkout.<\/p>"
+          }
+        },
+        "accordion_VDXWwn": {
+          "type": "accordion",
+          "settings": {
+            "question": "COME VERRÁ SPEDITO IL MIO ORDINE?",
+            "answer": "<p>Gli ordini di rotoli interi (o pellame) richiedono 5-7 giorni lavorativi per la preparazione dato che i materiali sono localizzati presso i magazzini dei nostri brand fornitori, mentre gli ordini di campioni vengono elaborati entro 1-2 giorni lavorativi. Dopo la spedizione, il tempo di consegna stimato è di 1-2 giorni lavorativi, a seconda della destinazione geografica. Riceverai una email non appena il tuo ordine sarà spedito.<\/p>"
+          }
+        },
+        "accordion_9pGTXA": {
+          "type": "accordion",
+          "settings": {
+            "question": "SPEDITE A LIVELLO INTERNAZIONALE? ",
+            "answer": "<p>Sì, spediamo in tutto il mondo. I tempi e costi di spedizione varieranno in base alla destinazione e al peso del materiale.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_38UPiC",
+        "accordion_wnPhgn",
+        "accordion_VDXWwn",
+        "accordion_9pGTXA"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "SPEDIZIONI",
+        "heading_size": "h1",
+        "show_button": false,
+        "button_label": "Some label",
+        "button_link": "",
+        "button_style": "simple",
+        "padding_top": "s",
+        "padding_bottom": "s"
+      }
+    },
+    "collapsible_content_Di3cNx": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion_qW6Tbb": {
+          "type": "accordion",
+          "settings": {
+            "question": "QUAL È LA VOSTRA POLITICA DI RESO? ",
+            "answer": "<p>Zerow accetta resi solo in caso di difetti gravi nel materiale o non conformità con quanto mostrato sul nostro portale web. In tal caso, contatta il nostro servizio clienti il prima possibile per richiedere assistenza.<\/p>"
+          }
+        },
+        "accordion_EPPpra": {
+          "type": "accordion",
+          "settings": {
+            "question": "COME POSSO RESTITUIRE UN ARTICOLO?",
+            "answer": "<p>Per richiedere un reso per materiali difettosi, contatta il nostro servizio clienti fornendo i dettagli del tuo ordine e una descrizione del difetto. Ti guideremo attraverso il processo di reso<\/p>"
+          }
+        },
+        "accordion_EAp6jh": {
+          "type": "accordion",
+          "settings": {
+            "question": "QUANDO RICEVERÒ IL RIMBORSO PER MATERIALI DIFETTOSI?",
+            "answer": "<p>Il rimborso per materiali difettosi verrà elaborato entro 7-10 giorni lavorativi dal ricevimento e verifica del reso.<\/p>"
+          }
+        },
+        "accordion_N94mAR": {
+          "type": "accordion",
+          "settings": {
+            "question": "A CHI VENGONO ADDEBITATE LE SPESE DI SPEDIZIONE IN CASO DI RESO? ",
+            "answer": "<p>In caso di restituzione, le spese di spedizione per il reso sono a carico del cliente.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_qW6Tbb",
+        "accordion_EPPpra",
+        "accordion_EAp6jh",
+        "accordion_N94mAR"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "POLITICA DI RESO",
+        "heading_size": "h1",
+        "show_button": false,
+        "button_label": "Some label",
+        "button_link": "",
+        "button_style": "simple",
+        "padding_top": "s",
+        "padding_bottom": "s"
+      }
+    },
+    "collapsible_content_yL3rEg": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion_xPbpLn": {
+          "type": "accordion",
+          "settings": {
+            "question": "SONO PREVISTI SCONTI O PROMOZIONI?",
+            "answer": "<p>Sì, periodicamente offriamo sconti e promozioni. Seguici per non perderli!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_xPbpLn"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "GENERALE",
+        "heading_size": "h1",
+        "show_button": false,
+        "button_label": "Some label",
+        "button_link": "",
+        "button_style": "simple",
+        "padding_top": "s",
+        "padding_bottom": "s"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_Ywdjzk",
+    "collapsible_content_xphmeM",
+    "collapsible_content_79pNT3",
+    "collapsible_content_AbzX7U",
+    "collapsible_content_WXkR7a",
+    "collapsible_content_b47L7h",
+    "collapsible_content_Di3cNx",
+    "collapsible_content_yL3rEg"
+  ]
+}

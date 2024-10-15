@@ -1,0 +1,50 @@
+{%- assign avada_seo_ovr_product_ids = "9875731218776,9875731218776" -%}
+{%- assign avada_seo_ovr_collection_ids = "" -%}
+{%- if request.page_type == 'collection' -%}
+{%- assign avada_seo_conditions = 1 -%}
+{%- unless avada_seo_conditions contains 0 -%}
+{%- unless avada_seo_ovr_collection_ids contains collection.id -%}
+{%- capture avada_seo_meta_title -%}{{ collection.title }} - Rimanenze di Alta Moda | {{ shop.name }}{%- endcapture -%}
+{%- capture avada_seo_meta_description -%}Acquista {{ collection.title }}  su {{ shop.name }}: Materiali di alta moda dalle maison italiane e internazionali. Campionatura gratuita e prezzi imbattibili disponibili ora.
+
+{%- endcapture -%}
+{%- endunless -%}
+{%- endunless -%}
+{%- endif -%}
+{%- if request.page_type == 'product' -%}
+{%- assign avada_seo_conditions = '' -%}
+{%- if product.type == "Pelle" -%}
+{%- assign avada_seo_conditions = avada_seo_conditions | append: 1 -%}
+{%- else -%}
+{%- assign avada_seo_conditions = avada_seo_conditions | append: 0 -%}
+{%- endif -%}
+{%- if avada_seo_conditions contains 1 -%}
+{%- unless avada_seo_ovr_product_ids contains product.id -%}
+{%- capture avada_seo_meta_title -%}Acquista {{ product.title }}{%- endcapture -%}
+{%- capture avada_seo_meta_description -%}Scopri il pellame {{ product.title }} con spessore di {{ product.metafields.custom.thickness }} mm, formato {{ product.metafields.custom.format }} e superficie media di {{ product.metafields.custom.average_hide_size }} m². Prezzo: {{ product.metafields.custom.add_price_m_m_ }} €/m²{%- endcapture -%}
+{%- endunless -%}
+{%- endif -%}
+{%- endif -%}
+{%- if request.page_type == 'product' -%}
+{%- assign avada_seo_conditions = '' -%}
+{%- if product.type == "Tessuto" -%}
+{%- assign avada_seo_conditions = avada_seo_conditions | append: 1 -%}
+{%- else -%}
+{%- assign avada_seo_conditions = avada_seo_conditions | append: 0 -%}
+{%- endif -%}
+{%- if avada_seo_conditions contains 1 -%}
+{%- unless avada_seo_ovr_product_ids contains product.id -%}
+{%- capture avada_seo_meta_title -%}Tessuto {{ product.title }} | Tessuti per {{ product.metafields.custom.uso_tessuto_filtro }}{%- endcapture -%}
+{%- capture avada_seo_meta_description -%}Scopri il tessuto {{ product.metafields.custom.tipologia_di_tessuto_filtro_ }} in {{ product.metafields.custom.composition }}, alto {{ product.metafields.custom.roll_height }} cm e con un peso di {{ product.metafields.custom.weight }} g/m. Prezzo: {{ product.metafields.custom.add_price_m_m_ }} €/m. Realizzato in {{ product.metafields.custom.made_in }}, perfetto per {{ product.metafields.custom.uso_tessuto_filtro }}.{%- endcapture -%}
+{%- endunless -%}
+{%- endif -%}
+{%- endif -%}
+{%- if avada_seo_meta_title -%}
+{%- assign seo_title = avada_seo_meta_title | strip_html | strip -%}
+{%- assign page_title = seo_title -%}
+{%- assign og_title = seo_title -%}
+{%- endif -%}
+{%- if avada_seo_meta_description -%}
+{%- assign page_description = avada_seo_meta_description | strip_html | strip -%}
+{%- assign og_description = page_description -%}
+{%- endif -%}

@@ -1,0 +1,243 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "image_banner_KgFQiA": {
+      "type": "image-banner",
+      "settings": {
+        "full_width": true,
+        "color_scheme": "background-3",
+        "image": "shopify:\/\/shop_images\/zerow-team.jpg",
+        "image_ratio": "21\/9",
+        "opacity_overlay": 0.4,
+        "subheading": "",
+        "heading": "<strong>LA MISSION DI ZEROW<\/strong>",
+        "heading_size": "h1",
+        "text_information": "<p><strong>Ridurre gli sprechi e promuovere l’uso responsabile delle risorse nella filiera moda, creando un futuro sostenibile per il settore.<\/strong><\/p>",
+        "text_align": "center",
+        "text_width": "small",
+        "additional_text": "",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_with_text_FekYwt": {
+      "type": "image-with-text",
+      "settings": {
+        "color_scheme": "",
+        "subheading": "",
+        "heading": "Su di noi",
+        "heading_size": "h1",
+        "text": "<p><strong>Zerow <\/strong>nasce dalla volontà di guidare un cambiamento sostenibile nell’industria della moda.<br\/><\/p><p>Siamo specializzati nella vendita di tessuti e pellami di alta qualità, recuperati dalle giacenze di magazzino di grandi aziende e manifatture italiane del lusso. <\/p><p><strong>Offriamo materiali unici e pregiati<\/strong> ad artigiani, designer e piccoli brand, con l'obiettivo di ridurre gli sprechi e promuovere la creatività sostenibile. <\/p><p><strong>Scopri la nostra selezione esclusiva<\/strong> e libera la tua creatività con i nostri tessuti e pellami deadstock.<\/p>",
+        "show_button": false,
+        "button_label": "Explore All",
+        "button_link": "",
+        "button_style": "primary",
+        "text_align": "top",
+        "text_width": "medium",
+        "image": "shopify:\/\/shop_images\/DSC_0731.jpg",
+        "height": "medium",
+        "position": "container",
+        "layout": "image_last",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "image_with_text_mCdXqR": {
+      "type": "image-with-text",
+      "settings": {
+        "color_scheme": "",
+        "subheading": "",
+        "heading": "Il nostro Laboratorio",
+        "heading_size": "h1",
+        "text": "<p><strong>Zerolab <\/strong>è il cuore creativo di Zerow. <br\/>Situato a Scandicci, è il nostro showroom e laboratorio dedicato alla moda sostenibile. <br\/><br\/>Qui, designer e artigiani possono esplorare e toccare con mano i nostri tessuti e pellami di alta qualità. Zerolab non è solo un luogo di esposizione, ma anche uno spazio dove <strong>sperimentare<\/strong>, <strong>creare <\/strong>e <strong>innovare<\/strong>. <br\/><br\/>Partecipando ai nostri <strong>workshop ed eventi<\/strong>, potrai immergerti nell'arte dell'upcycling, del riciclo e del riutilizzo, dando nuova vita ai materiali e contribuendo a una moda più sostenibile.<\/p>",
+        "show_button": true,
+        "button_label": "Scopri di Più",
+        "button_link": "shopify:\/\/pages\/showroom",
+        "button_style": "primary",
+        "text_align": "top",
+        "text_width": "medium",
+        "image": "shopify:\/\/shop_images\/Zerolab_firenze.jpg",
+        "height": "small",
+        "position": "container",
+        "layout": "text_last",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "image_with_text_jyewYL": {
+      "type": "image-with-text",
+      "settings": {
+        "color_scheme": "",
+        "subheading": "",
+        "heading": "La nostra visione",
+        "heading_size": "h1",
+        "text": "<p><strong>Vogliamo rivoluzionare l'industra della moda.<\/strong><br\/><br\/>Crediamo che ogni tessuto e pellame meriti una seconda vita e che la creatività possa essere il motore del cambiamento.<\/p><p>Vogliamo ispirare designer, artigiani e piccoli brand a creare in modo consapevole, utilizzando materiali di alta qualità che rispettino il pianeta. <\/p><p>Con Zerow, puntiamo a costruire un futuro in cui creatività e sostenibilità viaggino mano nella mano.<\/p>",
+        "show_button": false,
+        "button_label": "Explore All",
+        "button_link": "",
+        "button_style": "primary",
+        "text_align": "top",
+        "text_width": "medium",
+        "image": "shopify:\/\/shop_images\/prova-S00761.jpg",
+        "height": "medium",
+        "position": "container",
+        "layout": "image_last",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "gallery_with_text_jwJXg8": {
+      "type": "gallery-with-text",
+      "blocks": {
+        "featured_gallery_Ddmk4w": {
+          "type": "featured_gallery",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gabri.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.3,
+            "text_color_scheme": "",
+            "subheading": "CEO e Co-Founder",
+            "title": "Gabriele Rorandelli",
+            "heading_size": "h1",
+            "text": "Ingegnere Gestionale POLIMI specializzato in Innovation Management:Co-fondatore di un laboratorio specializzato nel recupero di materiali e nello sviluppo di accessori e borse nella zona di Scandicci, Zerolab.Ampia rete di contatti nel settore dell'alta moda pelletteria, grazie a una solida conoscenza del settore e del tessuto produttivo toscano.",
+            "show_button": false,
+            "button_label": "Some label",
+            "button_link": "",
+            "button_style": "secondary",
+            "card_active": false
+          }
+        },
+        "featured_gallery_mNwcHU": {
+          "type": "featured_gallery",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ale.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.3,
+            "text_color_scheme": "",
+            "subheading": "COO e Co-Founder",
+            "title": "Alessio Troisi",
+            "heading_size": "h1",
+            "text": "Ingegnere Gestionale specializzato in Industrial Management:Analista Funzionale dal 2021 al 2023 presso il Gruppo Techedge. Realizzazione di progetti di implementazione di soluzioni PLM per aziende multinazionali.Esperienza nel settore calzaturiero grazie all'attività familiare.",
+            "show_button": false,
+            "button_label": "Some label",
+            "button_link": "",
+            "button_style": "secondary",
+            "card_active": false
+          }
+        }
+      },
+      "block_order": [
+        "featured_gallery_Ddmk4w",
+        "featured_gallery_mNwcHU"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "FONDATORI",
+        "heading_size": "h1",
+        "aspect_ratio": "21\/9",
+        "full_width": false,
+        "padding_top": "s",
+        "padding_bottom": "s"
+      }
+    },
+    "gallery_with_text_nzndFB": {
+      "type": "gallery-with-text",
+      "blocks": {
+        "featured_gallery_GrmpR9": {
+          "type": "featured_gallery",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vale.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.3,
+            "text_color_scheme": "",
+            "subheading": "Content Specialist",
+            "title": "Valentina Bartolucci",
+            "heading_size": "h1",
+            "text": "Social Media Manager e Content Creator in Zerow, appassionata di moda sostenibile e comunicazione digitale. Con la sua creatività e attenzione ai dettagli, gestisce le nostre piattaforme social per raccontare al meglio la missione di Zerow e connettersi con la nostra community.",
+            "show_button": false,
+            "button_label": "Some label",
+            "button_link": "",
+            "button_style": "secondary",
+            "card_active": false
+          }
+        },
+        "featured_gallery_afzBGG": {
+          "type": "featured_gallery",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/David-Braccini_jpg.webp",
+            "show_video": false,
+            "overlay_opacity": 0.3,
+            "text_color_scheme": "",
+            "subheading": "Marketing Manager",
+            "title": "David Braccini",
+            "heading_size": "h1",
+            "text": "Marketing Manager con un background presso la propria startup di sneakers riciclabili Dotzero, La passione per la moda sostenibile arriva da la ditta di calzature di famiglia. Ma adesso si dedica solo a progetti di moda sostenibile.",
+            "show_button": false,
+            "button_label": "Some label",
+            "button_link": "",
+            "button_style": "secondary",
+            "card_active": false
+          }
+        },
+        "featured_gallery_imfHzw": {
+          "type": "featured_gallery",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/isabella-delle-piagge_42d813dd-42ae-494c-a3b4-685d86395fbb.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.3,
+            "text_color_scheme": "",
+            "subheading": "Sales manager",
+            "title": "Isabella Dalle Piagge",
+            "heading_size": "h1",
+            "text": "Esperta nel settore tessile, con esperienza nella vendita di tessuti a stock, Appassionata di moda sostenibile.",
+            "show_button": false,
+            "button_label": "Some label",
+            "button_link": "",
+            "button_style": "secondary",
+            "card_active": false
+          }
+        }
+      },
+      "block_order": [
+        "featured_gallery_GrmpR9",
+        "featured_gallery_afzBGG",
+        "featured_gallery_imfHzw"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "Team",
+        "heading_size": "h1",
+        "aspect_ratio": "21\/9",
+        "full_width": false,
+        "padding_top": "s",
+        "padding_bottom": "s"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_KgFQiA",
+    "image_with_text_FekYwt",
+    "image_with_text_mCdXqR",
+    "image_with_text_jyewYL",
+    "gallery_with_text_jwJXg8",
+    "gallery_with_text_nzndFB"
+  ]
+}

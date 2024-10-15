@@ -1,0 +1,1130 @@
+{
+  "sections": {
+    "image_with_text_WC473K": {
+      "type": "image-with-text",
+      "custom_css": [
+        ".image-with-text__grid--reverse.image-with-text__grid--top .image-with-text__content--medium {position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 80%;}",
+        ".image-with-text__grid--reverse.image-with-text__grid--top .image-with-text__content--medium h2 {color: #fff; font-family: \"Bebas Neue\", sans-serif; font-size: 3em;}",
+        ".image-with-text.section-template--22583904993624__image_with_text_WC473K-padding .container {padding: 0;}",
+        ".image-with-text__content {align-items: center;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-68bdeeaf-b859-4a5e-a5d6-63faea64794c",
+        "subheading": "",
+        "heading": "Materiali di lusso per le tue collezioni",
+        "heading_size": "h1",
+        "text": "<p>Selezioniamo eccedenze dalle maison di alta moda italiane per offrirti tessuti e pellami esclusivi e a basso impatto.<\/p>",
+        "show_button": true,
+        "button_label": "Acquista Ora",
+        "button_link": "#scroll",
+        "button_style": "primary",
+        "text_align": "top",
+        "text_width": "medium",
+        "video": "shopify:\/\/files\/videos\/orizzontale-compresso.mp4",
+        "height": "medium",
+        "position": "container",
+        "layout": "text_last",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "custom_liquid_UVHikA": {
+      "type": "custom-liquid",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"custom-carousel\" id=\"scroll\" style=\"position: relative;\n  margin-top: -1em; margin-bottom:3em;\">\n  <div class=\"carousel-track\" style=\"display: flex; align-items: center;justify-content:center;\">\n    <div class=\"carousel-item\">\n      <img width=\"150px\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0834\/4905\/3528\/files\/Vanity_Fair_logo.webp?v=1720550503\" alt=\"Carousel Image 1\" style=\"max-height: 50px;max-width:100px;margin-right: 50px;\">\n    <\/div>\n    <div class=\"carousel-item\">\n      <img width=\"150px\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0834\/4905\/3528\/files\/fashion_network_8ee02c9a-0ecc-45ca-bac8-e2a4211924d1.webp?v=1719500498\" alt=\"Carousel Image 2\" style=\"max-height: 50px;max-width:100px;margin-right: 50px;\">\n    <\/div>\n    <div class=\"carousel-item\">\n      <img width=\"150px\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0834\/4905\/3528\/files\/Logo-Panorama.png?v=1722327600\" alt=\"Carousel Image 3\" style=\"max-height: 50px;margin-right: 50px;\">\n    <\/div>\n    <div class=\"carousel-item\">\n      <img width=\"150px\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0834\/4905\/3528\/files\/repubblica-1.webp?v=1719500498\" alt=\"Carousel Image 4\" style=\"max-height: 50px;max-width:100px;margin-right: 50px;\">\n    <\/div>\n    <div class=\"carousel-item\">\n      <img width=\"150px\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0834\/4905\/3528\/files\/startupitalia-1.webp?v=1719500498\" alt=\"Carousel Image 5\" style=\"max-height: 50px;max-width:100px;margin-right: 50px;\">\n    <\/div>\n    <div class=\"carousel-item\">\n      <img width=\"150px\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0834\/4905\/3528\/files\/conceria_6de3ddfe-0122-44eb-8f41-8643efd2a4e8.webp?v=1722327726\" alt=\"Carousel Image 5\" style=\"max-height: 50px;max-width:100px;margin-right: 50px;\">\n    <\/div>\n     <div class=\"carousel-item\">\n      <img width=\"100px\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0834\/4905\/3528\/files\/sole_24_ore.svg?v=1722327856\" alt=\"Carousel Image 5\" style=\"max-height: 25px;max-width:100px;margin-right: 50px;\">\n    <\/div>\n    <div class=\"carousel-item\">\n      <img  src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0834\/4905\/3528\/files\/nazione_bec4f7f1-2d12-4130-8fbd-9ccfdc564b87.webp?v=1722327752\" alt=\"Carousel Image 5\" style=\"max-height: 50px;max-width:100px;margin-right: 50px;\">\n    <\/div>\n  <\/div>\n<\/div>"
+      }
+    },
+    "rich_text_wG4tC4": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_EHbd3F": {
+          "type": "heading",
+          "settings": {
+            "heading": "Acquista rimanenze del lusso",
+            "heading_size": "medium"
+          }
+        },
+        "text_rpfcz8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Scopri i nostri tessuti e pellami deadstock<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EHbd3F",
+        "text_rpfcz8"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "media_slideshow_B4wQMK": {
+      "type": "media-slideshow",
+      "blocks": {
+        "media_slide_A9GCTe": {
+          "type": "media_slide",
+          "settings": {
+            "text_color_scheme": "",
+            "image": "shopify:\/\/shop_images\/detail-S30809_23105e43-8962-4599-ba45-172fb5472658.jpg",
+            "overlay_opacity": 0.2,
+            "enable_hover": false,
+            "show_video": false,
+            "video_url": "",
+            "autoplay_video": true,
+            "muted_video": true,
+            "loop_video": true,
+            "show_icon_play": true,
+            "show_icon_sound": true,
+            "description_video": "",
+            "subheading": "",
+            "heading": "Tessuti",
+            "heading_size": "h2",
+            "description": "",
+            "additional_image_width": 50,
+            "position_content": "bottom",
+            "show_button": true,
+            "button_label": "Esplora",
+            "button_link": "shopify:\/\/collections\/tessuti",
+            "button_style": "secondary",
+            "full_link": false
+          }
+        }
+      },
+      "block_order": [
+        "media_slide_A9GCTe"
+      ],
+      "settings": {
+        "header_overlay": true,
+        "layout": "grid",
+        "full": true,
+        "gap": false,
+        "border_radius": false,
+        "mobile_hide": false,
+        "desktop_hide": true,
+        "aspect_ratio": "3\/2",
+        "bullets_color_scheme": "background-4",
+        "position_bullets": "right",
+        "bullets_background": false,
+        "enable_navigation": false,
+        "navigation_color_scheme": "background-4",
+        "navigation_position": "sides",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "media_slideshow_4dXdnH": {
+      "type": "media-slideshow",
+      "blocks": {
+        "media_slide_xDdbzw": {
+          "type": "media_slide",
+          "settings": {
+            "text_color_scheme": "",
+            "image": "shopify:\/\/shop_images\/details.jpg",
+            "overlay_opacity": 0.2,
+            "enable_hover": true,
+            "show_video": false,
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "autoplay_video": true,
+            "muted_video": true,
+            "loop_video": true,
+            "show_icon_play": true,
+            "show_icon_sound": true,
+            "description_video": "",
+            "subheading": "",
+            "heading": "Pellami",
+            "heading_size": "h2",
+            "description": "",
+            "additional_image_width": 150,
+            "position_content": "bottom",
+            "show_button": true,
+            "button_label": "Esplora",
+            "button_link": "shopify:\/\/collections\/pellami",
+            "button_style": "secondary",
+            "full_link": false
+          }
+        }
+      },
+      "block_order": [
+        "media_slide_xDdbzw"
+      ],
+      "custom_css": [
+        "@media (min-width: 1024px) {.hidden-on-desktop {display: none; }}"
+      ],
+      "settings": {
+        "header_overlay": true,
+        "layout": "grid",
+        "full": true,
+        "gap": false,
+        "border_radius": false,
+        "mobile_hide": false,
+        "desktop_hide": true,
+        "aspect_ratio": "3\/2",
+        "bullets_color_scheme": "",
+        "position_bullets": "right",
+        "bullets_background": false,
+        "enable_navigation": false,
+        "navigation_color_scheme": "",
+        "navigation_position": "sides",
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "media-slideshow": {
+      "type": "media-slideshow",
+      "blocks": {
+        "template--18074014941459__5ba8a55f-3a9f-475f-b23b-307d884f7df4-16783485852a34f1b2-0": {
+          "type": "media_slide",
+          "settings": {
+            "text_color_scheme": "background-4",
+            "image": "shopify:\/\/shop_images\/detail-S30809_339282c5-a59d-475f-8b8e-85d4162f0214.jpg",
+            "overlay_opacity": 0.1,
+            "enable_hover": true,
+            "show_video": false,
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "autoplay_video": true,
+            "muted_video": true,
+            "loop_video": true,
+            "show_icon_play": true,
+            "show_icon_sound": true,
+            "description_video": "",
+            "subheading": "",
+            "heading": "Tessuti",
+            "heading_size": "h2",
+            "description": "",
+            "additional_image_width": 150,
+            "position_content": "bottom",
+            "show_button": true,
+            "button_label": "Esplora",
+            "button_link": "shopify:\/\/collections\/tessuti",
+            "button_style": "secondary",
+            "full_link": true
+          }
+        },
+        "template--18074014941459__5ba8a55f-3a9f-475f-b23b-307d884f7df4-16783485852a34f1b2-1": {
+          "type": "media_slide",
+          "settings": {
+            "text_color_scheme": "light",
+            "image": "shopify:\/\/shop_images\/ARIA-LUX-BLACK1.jpg",
+            "overlay_opacity": 0.2,
+            "enable_hover": true,
+            "show_video": false,
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "autoplay_video": true,
+            "muted_video": true,
+            "loop_video": true,
+            "show_icon_play": true,
+            "show_icon_sound": true,
+            "description_video": "",
+            "subheading": "",
+            "heading": "Pellami",
+            "heading_size": "h2",
+            "description": "",
+            "additional_image_width": 150,
+            "position_content": "bottom",
+            "show_button": true,
+            "button_label": "Esplora",
+            "button_link": "shopify:\/\/collections\/pellami",
+            "button_style": "secondary",
+            "full_link": true
+          }
+        }
+      },
+      "block_order": [
+        "template--18074014941459__5ba8a55f-3a9f-475f-b23b-307d884f7df4-16783485852a34f1b2-0",
+        "template--18074014941459__5ba8a55f-3a9f-475f-b23b-307d884f7df4-16783485852a34f1b2-1"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "header_overlay": false,
+        "layout": "half",
+        "full": true,
+        "gap": false,
+        "border_radius": false,
+        "mobile_hide": true,
+        "desktop_hide": false,
+        "aspect_ratio": "21\/9",
+        "bullets_color_scheme": "background-4",
+        "position_bullets": "right",
+        "bullets_background": false,
+        "enable_navigation": false,
+        "navigation_color_scheme": "",
+        "navigation_position": "sides",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "carousel_LNwd36": {
+      "type": "carousel",
+      "blocks": {
+        "carousel_slide_ixyXUp": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/detail-S30809.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.1,
+            "text_color_scheme": "",
+            "heading": "Denim",
+            "link": "shopify:\/\/collections\/tessuto-denim"
+          }
+        },
+        "carousel_slide_NmCaFw": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/JACQUARD-FANTASIA--DI-COTONE-MISTO-POLIESTERENYLON-STRETCH-dettaglio.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.3,
+            "text_color_scheme": "background-3",
+            "heading": "Jacquard",
+            "link": "shopify:\/\/collections\/tessuto-jacquard"
+          }
+        },
+        "carousel_slide_pVpywn": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Gabardine_gessato_di_lana_blu_scuro_-_Zerow_b.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.2,
+            "text_color_scheme": "background-3",
+            "heading": "Gabardine",
+            "link": "shopify:\/\/collections\/tessuto-gabardine"
+          }
+        },
+        "carousel_slide_4NRxXB": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Raso_Cr_pe_Reversibile_Celeste_misto_viscosa_acetato_-_Zerow_1.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.1,
+            "text_color_scheme": "background-3",
+            "heading": "Raso",
+            "link": "shopify:\/\/collections\/tessuto-raso"
+          }
+        },
+        "carousel_slide_et3Gkp": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Felpa_garzata_in_cotone_grigio_melange_1.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.2,
+            "text_color_scheme": "",
+            "heading": "Felpa",
+            "link": "shopify:\/\/collections\/tessuto-felpa"
+          }
+        },
+        "carousel_slide_jgkLeB": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Tessuto_Twill_in_Pura_Lana_Beige_-_Zerow_2.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.3,
+            "text_color_scheme": "",
+            "heading": "Twill",
+            "link": "shopify:\/\/collections\/twill"
+          }
+        },
+        "carousel_slide_3E3F6c": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Tessuto_Tartan_in_Flanella_Blu_misto_cotone_lana_-_Zerow_1.jpg",
+            "show_video": false,
+            "overlay_opacity": 0,
+            "text_color_scheme": "",
+            "heading": "Tartan",
+            "link": "shopify:\/\/collections\/tartan"
+          }
+        },
+        "carousel_slide_bzRQqr": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/detail-S23955_2366b9a6-c644-46e6-9e62-209e8b243eb5.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.1,
+            "text_color_scheme": "",
+            "heading": "Jersey",
+            "link": "shopify:\/\/collections\/tessuti-jersey"
+          }
+        },
+        "carousel_slide_dHVYQc": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/detailson-S54521.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.1,
+            "text_color_scheme": "",
+            "heading": "Popeline",
+            "link": "shopify:\/\/collections\/tessuto-popeline"
+          }
+        },
+        "carousel_slide_TxNdxr": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Crepe-fancy-tweed-rosso-e-azzurro-cover_15e16346-1422-4425-8120-a104fa52c248.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.5,
+            "text_color_scheme": "background-3",
+            "heading": "Tweed",
+            "link": "shopify:\/\/collections\/tweed"
+          }
+        }
+      },
+      "block_order": [
+        "carousel_slide_ixyXUp",
+        "carousel_slide_NmCaFw",
+        "carousel_slide_pVpywn",
+        "carousel_slide_4NRxXB",
+        "carousel_slide_et3Gkp",
+        "carousel_slide_jgkLeB",
+        "carousel_slide_3E3F6c",
+        "carousel_slide_bzRQqr",
+        "carousel_slide_dHVYQc",
+        "carousel_slide_TxNdxr"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "subheading": "Categorie Best seller",
+        "heading": "Tessuti",
+        "heading_size": "h2",
+        "columns": 4,
+        "image_ratio": "square",
+        "button_show": true,
+        "button_label": "Tutti i tessuti",
+        "button_link": "shopify:\/\/collections\/tessuti",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "carousel_Ftf9a7": {
+      "type": "carousel",
+      "blocks": {
+        "carousel_slide_EQC63r": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/kid-scamosciato-maroon-cover_5dadc6ad-d277-4ffa-839e-361740cba93d.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.2,
+            "text_color_scheme": "background-3",
+            "heading": "Pelle Scamosciata",
+            "link": "shopify:\/\/collections\/pelle-scamosciata-suede"
+          }
+        },
+        "carousel_slide_HRgzYE": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/GLOSSY-CRACKLE-BLACK2.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.2,
+            "text_color_scheme": "",
+            "heading": "Stampato",
+            "link": "shopify:\/\/collections\/pelle-stampata"
+          }
+        },
+        "carousel_slide_QAg4PE": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pelle-vitello-bianca_992a21cf-9da7-4154-830c-2ec3e28c78cc.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.1,
+            "text_color_scheme": "background-3",
+            "heading": "Vitello",
+            "link": "shopify:\/\/collections\/pelle-di-vitello"
+          }
+        },
+        "carousel_slide_wU8Y8P": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/details-pitone-deadstock_49399c93-2d0d-4b4c-a25b-c040acbc3337.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.3,
+            "text_color_scheme": "",
+            "heading": "Stampa rettile",
+            "link": "shopify:\/\/collections\/pelle-stampa-rettile"
+          }
+        },
+        "carousel_slide_yEC6bH": {
+          "type": "carousel_slide",
+          "settings": {
+            "show_video": false,
+            "overlay_opacity": 0.3,
+            "text_color_scheme": "",
+            "heading": "Pelle liscia",
+            "link": "shopify:\/\/collections\/pelle-pieno-fiore"
+          }
+        },
+        "carousel_slide_kwcHpL": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cover-zebra-intero.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.3,
+            "text_color_scheme": "background-3",
+            "heading": "Cavallino",
+            "link": "shopify:\/\/collections\/pelle-cavallino"
+          }
+        }
+      },
+      "block_order": [
+        "carousel_slide_EQC63r",
+        "carousel_slide_HRgzYE",
+        "carousel_slide_QAg4PE",
+        "carousel_slide_wU8Y8P",
+        "carousel_slide_yEC6bH",
+        "carousel_slide_kwcHpL"
+      ],
+      "custom_css": [
+        "@media (max-width: 768px) {.carousel__slider .swiper-wrapper {paddding-bottom: 15px !important; }}"
+      ],
+      "settings": {
+        "subheading": "Categorie Best Sellers",
+        "heading": "Pellami",
+        "heading_size": "h2",
+        "columns": 4,
+        "image_ratio": "square",
+        "button_show": true,
+        "button_label": "Tutti i pellami",
+        "button_link": "shopify:\/\/collections\/pellami",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "rich_text_dThR3q": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_WYqqDG": {
+          "type": "heading",
+          "settings": {
+            "heading": "Dicono di noi",
+            "heading_size": "large"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WYqqDG"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "media_slideshow_7Dqk9t": {
+      "type": "media-slideshow",
+      "blocks": {
+        "media_slide_QVFeUn": {
+          "type": "media_slide",
+          "settings": {
+            "text_color_scheme": "",
+            "overlay_opacity": 0,
+            "enable_hover": true,
+            "show_video": true,
+            "video": "shopify:\/\/files\/videos\/Amo portarvi con me, raccontare di questo meraviglioso lavoro, di questo sogno che con immenso sacrificio e dedizione sto portando avanti….proverò a farlo più spesso, a parlarvi anche di tante realtà come la mia, che con amore portano .mp4",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "autoplay_video": true,
+            "muted_video": false,
+            "loop_video": true,
+            "show_icon_play": true,
+            "show_icon_sound": true,
+            "description_video": "",
+            "subheading": "Pellami",
+            "heading": "Recensione by Kairos",
+            "heading_size": "h2",
+            "description": "",
+            "additional_image_width": 150,
+            "position_content": "bottom",
+            "show_button": false,
+            "button_label": "Dicono fi noi",
+            "button_link": "",
+            "button_style": "secondary",
+            "full_link": true
+          }
+        },
+        "media_slide_etH8ek": {
+          "type": "media_slide",
+          "settings": {
+            "text_color_scheme": "",
+            "overlay_opacity": 0,
+            "enable_hover": false,
+            "show_video": true,
+            "video": "shopify:\/\/files\/videos\/Exciting Collaboration Announcement!  We’re thrilled to partner with Zerow, a leader in sustainable materials.Together, we’re bringing you stylish streetwear crafted from premium, eco-friendly fabrics with a commitment to sustainability.mp4",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "autoplay_video": true,
+            "muted_video": false,
+            "loop_video": true,
+            "show_icon_play": true,
+            "show_icon_sound": true,
+            "description_video": "",
+            "subheading": "Tessuti",
+            "heading": "Recensione by Jonas.streetwear",
+            "heading_size": "h2",
+            "description": "",
+            "additional_image_width": 150,
+            "position_content": "bottom",
+            "show_button": false,
+            "button_label": "Some label",
+            "button_link": "",
+            "button_style": "secondary",
+            "full_link": true
+          }
+        },
+        "media_slide_mHKYaE": {
+          "type": "media_slide",
+          "settings": {
+            "text_color_scheme": "background-3",
+            "overlay_opacity": 0,
+            "enable_hover": true,
+            "show_video": true,
+            "video": "shopify:\/\/files\/videos\/The moment you’ve been waiting for!   We are thrilled to reveal the exquisite bag designed by Victor-Hart and brought to life with the premium materials and craftsmanship from ZEROW Lab. This masterpiece showcases our innovative design id.mp4",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "autoplay_video": true,
+            "muted_video": true,
+            "loop_video": true,
+            "show_icon_play": true,
+            "show_icon_sound": true,
+            "description_video": "",
+            "subheading": "Dicono di noi",
+            "heading": "Recensione by Victor Hart",
+            "heading_size": "h2",
+            "description": "",
+            "additional_image_width": 150,
+            "position_content": "bottom",
+            "show_button": false,
+            "button_label": "Some label",
+            "button_link": "",
+            "button_style": "secondary",
+            "full_link": true
+          }
+        }
+      },
+      "block_order": [
+        "media_slide_QVFeUn",
+        "media_slide_etH8ek",
+        "media_slide_mHKYaE"
+      ],
+      "settings": {
+        "header_overlay": true,
+        "layout": "half",
+        "full": true,
+        "gap": true,
+        "border_radius": true,
+        "mobile_hide": false,
+        "desktop_hide": true,
+        "aspect_ratio": "full",
+        "bullets_color_scheme": "",
+        "position_bullets": "right",
+        "bullets_background": true,
+        "enable_navigation": false,
+        "navigation_color_scheme": "",
+        "navigation_position": "bottom",
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "media_slideshow_gw9Bg7": {
+      "type": "media-slideshow",
+      "blocks": {
+        "media_slide_g7cBnQ": {
+          "type": "media_slide",
+          "settings": {
+            "text_color_scheme": "background-3",
+            "overlay_opacity": 0,
+            "enable_hover": true,
+            "show_video": true,
+            "video": "shopify:\/\/files\/videos\/The moment you’ve been waiting for!   We are thrilled to reveal the exquisite bag designed by Victor-Hart and brought to life with the premium materials and craftsmanship from ZEROW Lab. This masterpiece showcases our innovative design id.mp4",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "autoplay_video": true,
+            "muted_video": true,
+            "loop_video": true,
+            "show_icon_play": true,
+            "show_icon_sound": true,
+            "description_video": "",
+            "subheading": "Dicono di noi",
+            "heading": "Victor Hart",
+            "heading_size": "h2",
+            "description": "",
+            "additional_image_width": 150,
+            "position_content": "bottom",
+            "show_button": false,
+            "button_label": "Some label",
+            "button_link": "",
+            "button_style": "secondary",
+            "full_link": true
+          }
+        },
+        "media_slide_KtVPVa": {
+          "type": "media_slide",
+          "settings": {
+            "text_color_scheme": "",
+            "overlay_opacity": 0,
+            "enable_hover": true,
+            "show_video": true,
+            "video": "shopify:\/\/files\/videos\/Amo portarvi con me, raccontare di questo meraviglioso lavoro, di questo sogno che con immenso sacrificio e dedizione sto portando avanti….proverò a farlo più spesso, a parlarvi anche di tante realtà come la mia, che con amore portano .mp4",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "autoplay_video": true,
+            "muted_video": false,
+            "loop_video": true,
+            "show_icon_play": true,
+            "show_icon_sound": true,
+            "description_video": "",
+            "subheading": "Pellami",
+            "heading": "Kairos",
+            "heading_size": "h2",
+            "description": "",
+            "additional_image_width": 150,
+            "position_content": "bottom",
+            "show_button": false,
+            "button_label": "Dicono fi noi",
+            "button_link": "",
+            "button_style": "secondary",
+            "full_link": true
+          }
+        },
+        "media_slide_aEcfPf": {
+          "type": "media_slide",
+          "settings": {
+            "text_color_scheme": "",
+            "overlay_opacity": 0,
+            "enable_hover": false,
+            "show_video": true,
+            "video": "shopify:\/\/files\/videos\/Exciting Collaboration Announcement!  We’re thrilled to partner with Zerow, a leader in sustainable materials.Together, we’re bringing you stylish streetwear crafted from premium, eco-friendly fabrics with a commitment to sustainability.mp4",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "autoplay_video": true,
+            "muted_video": false,
+            "loop_video": true,
+            "show_icon_play": true,
+            "show_icon_sound": true,
+            "description_video": "",
+            "subheading": "Tessuti",
+            "heading": "Jonas.streetwear",
+            "heading_size": "h2",
+            "description": "",
+            "additional_image_width": 150,
+            "position_content": "bottom",
+            "show_button": false,
+            "button_label": "Some label",
+            "button_link": "",
+            "button_style": "secondary",
+            "full_link": true
+          }
+        },
+        "media_slide_Q79Mwg": {
+          "type": "media_slide",
+          "settings": {
+            "text_color_scheme": "background-3",
+            "overlay_opacity": 0.1,
+            "enable_hover": true,
+            "show_video": true,
+            "video": "shopify:\/\/files\/videos\/@beta_gall3ry short con materiali @zerow_it.mp4",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "autoplay_video": true,
+            "muted_video": true,
+            "loop_video": true,
+            "show_icon_play": true,
+            "show_icon_sound": true,
+            "description_video": "",
+            "subheading": "Tessuti",
+            "heading": "Beta Gallery",
+            "heading_size": "h2",
+            "description": "",
+            "additional_image_width": 150,
+            "position_content": "bottom",
+            "show_button": false,
+            "button_label": "Some label",
+            "button_link": "",
+            "button_style": "secondary",
+            "full_link": true
+          }
+        },
+        "media_slide_GDDiGJ": {
+          "type": "media_slide",
+          "settings": {
+            "text_color_scheme": "background-3",
+            "overlay_opacity": 0.1,
+            "enable_hover": true,
+            "show_video": true,
+            "video": "shopify:\/\/files\/videos\/SUPER BEGGIE JEANS V1Ordine realizzato su Levi’s vintage 505 utilizzando del jeans scuro di recupero che mi ha mandato @zerow_it Se cercate materiali per le vostre creazioni, vi consiglio di fare un giro sul loro profilo  Mentre per il cu.mp4",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "autoplay_video": true,
+            "muted_video": true,
+            "loop_video": true,
+            "show_icon_play": true,
+            "show_icon_sound": true,
+            "description_video": "",
+            "subheading": "Tessuti",
+            "heading": "Nico studio",
+            "heading_size": "h2",
+            "description": "",
+            "additional_image_width": 150,
+            "position_content": "bottom",
+            "show_button": false,
+            "button_label": "Some label",
+            "button_link": "",
+            "button_style": "secondary",
+            "full_link": true
+          }
+        },
+        "media_slide_ppCKgN": {
+          "type": "media_slide",
+          "settings": {
+            "text_color_scheme": "background-3",
+            "overlay_opacity": 0.1,
+            "enable_hover": true,
+            "show_video": true,
+            "video": "shopify:\/\/files\/videos\/Da materiali dimenticati a capolavori di design  ️@aggs_studio ci mostra come ha trasformato i pellami deadstock di @zerow_it recuperati da giacenze di magazzino di grandi aziende del lusso, in un prodotto capace di combinare creatività .mp4",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "autoplay_video": true,
+            "muted_video": true,
+            "loop_video": true,
+            "show_icon_play": true,
+            "show_icon_sound": true,
+            "description_video": "",
+            "subheading": "Pellami",
+            "heading": "Agg Studio",
+            "heading_size": "h2",
+            "description": "",
+            "additional_image_width": 150,
+            "position_content": "bottom",
+            "show_button": false,
+            "button_label": "Some label",
+            "button_link": "",
+            "button_style": "secondary",
+            "full_link": true
+          }
+        }
+      },
+      "block_order": [
+        "media_slide_g7cBnQ",
+        "media_slide_KtVPVa",
+        "media_slide_aEcfPf",
+        "media_slide_Q79Mwg",
+        "media_slide_GDDiGJ",
+        "media_slide_ppCKgN"
+      ],
+      "settings": {
+        "header_overlay": true,
+        "layout": "half",
+        "full": true,
+        "gap": true,
+        "border_radius": true,
+        "mobile_hide": true,
+        "desktop_hide": false,
+        "aspect_ratio": "21\/9",
+        "bullets_color_scheme": "",
+        "position_bullets": "right",
+        "bullets_background": true,
+        "enable_navigation": false,
+        "navigation_color_scheme": "",
+        "navigation_position": "bottom",
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "1726135227cad96adf": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_jAHfTc": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_jAHfTc"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1720787699608f860d": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "popular-products": {
+      "type": "popular-products",
+      "settings": {
+        "meta": "<p>\/m<\/p>",
+        "subheading": "",
+        "heading": "Tessuti",
+        "heading_size": "h2",
+        "product_list": [
+          "crepe-di-seta-trasparente-bianco",
+          "tessuto-tartan-in-cotone",
+          "denim-elasticizzato-ruggine-11-oz",
+          "crepe-de-chine-in-pura-seta",
+          "tessuto-twill-in-pura-lana-beige",
+          "popeline-cotone-tinto-filo-fantasia-quadri",
+          "denim-100-cotone",
+          "jersey-cotone-elasticizzato-blu-oceano",
+          "jersey-cotone-nero",
+          "tessuto-tartan-in-flanella-blu-misto-cotone-lana",
+          "raso-di-nylon",
+          "tessuto-gabardine-mano-morbida",
+          "fodera-in-viscosa",
+          "tessuto-twill-blue-misto",
+          "tartan-scozzese-in-cotone-mano-garzata",
+          "crepe-de-chine"
+        ],
+        "products_to_show": 4,
+        "image_ratio": "square",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_collection": true,
+        "show_desc": false,
+        "columns_mobile": "2",
+        "button_show": true,
+        "button_label": "Vedi Tutti",
+        "button_style": "primary",
+        "button_link": "shopify:\/\/collections\/tessuti",
+        "padding_top": "s",
+        "padding_bottom": "s"
+      }
+    },
+    "popular-products-2": {
+      "type": "popular-products",
+      "settings": {
+        "meta": "<p>\/m²<\/p>",
+        "subheading": "",
+        "heading": "Pellami",
+        "heading_size": "h2",
+        "product_list": [
+          "capretto-scamosciato-castagna-e-marrone",
+          "vitello-pieno-fiore-nero",
+          "vitello-bottolato-arancio",
+          "capretto-scamosciato-blu",
+          "vitello-liscio-caramello",
+          "vitello-abrasivato-caramello",
+          "vitello-stampato-nero",
+          "vitello-liscio-cuoio-3-mm",
+          "vitello-stampa-cocco-effetto-gel",
+          "vitello-stampa-crackle-nero-lucido"
+        ],
+        "products_to_show": 4,
+        "image_ratio": "square",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_collection": true,
+        "show_desc": false,
+        "columns_mobile": "2",
+        "button_show": true,
+        "button_label": "Vedi Tutti",
+        "button_style": "primary",
+        "button_link": "shopify:\/\/collections\/pellami",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "image_with_text_q9PxB8": {
+      "type": "image-with-text",
+      "settings": {
+        "color_scheme": "",
+        "subheading": "MISSION",
+        "heading": "La nostra missione: Eliminare gli scarti dalla moda",
+        "heading_size": "h2",
+        "text": "",
+        "show_button": true,
+        "button_label": "Chi siamo",
+        "button_link": "shopify:\/\/pages\/chi-siamo",
+        "button_style": "primary",
+        "text_align": "top",
+        "text_width": "medium",
+        "image": "shopify:\/\/shop_images\/zerow-team.jpg",
+        "height": "adapt",
+        "position": "container",
+        "layout": "image_last",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "instagram-collage": {
+      "type": "instagram-collage",
+      "blocks": {
+        "block_1": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WhatsApp_Image_2024-05-27_at_14.43.01_1.jpg"
+          }
+        },
+        "block_2": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2024-06-27_at_17.05.47.png"
+          }
+        },
+        "block_3": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2024-06-27_at_17.05.55.png"
+          }
+        },
+        "block_4": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2024-06-27_at_17.09.19.png"
+          }
+        },
+        "block_5": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1home.jpg"
+          }
+        },
+        "instagram_collage_image_LBNPBy": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1home.jpg"
+          }
+        },
+        "block_6": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/borsa_pitone.jpg"
+          }
+        },
+        "block_7": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2024-06-27_at_17.34.35.png"
+          }
+        },
+        "block_8": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dotzero-ctrl_c.jpg"
+          }
+        },
+        "block_10": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2024-06-27_at_17.19.46.png"
+          }
+        },
+        "instagram_collage_image_fUjqDp": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Giubbotto_in_denim_deadstock.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "block_1",
+        "block_2",
+        "block_3",
+        "block_4",
+        "block_5",
+        "instagram_collage_image_LBNPBy",
+        "block_6",
+        "block_7",
+        "block_8",
+        "block_10",
+        "instagram_collage_image_fUjqDp"
+      ],
+      "settings": {
+        "section_type": "slideshow_1",
+        "subheading": "Community",
+        "heading": "I prodotti creati con i nostri materiali",
+        "heading_size": "h2",
+        "speed_slider_1": 500,
+        "speed_slider_2": 700,
+        "column_to_show": 6,
+        "image_ratio": "square",
+        "show_account": false,
+        "name_account": "Text",
+        "link_account": "shopify:\/\/collections\/all",
+        "show_description": false,
+        "button_label": "Follow",
+        "button_link": "",
+        "button_style": "primary",
+        "icon": "instagram",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "rich_text_fbpHcz": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_zTAmet": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hai delle rimanenze di magazzino e vuoi venderle con noi?",
+            "heading_size": "medium"
+          }
+        },
+        "text_3BfEGn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Scrivici la tua richiesta cliccando qua sotto.<\/p>"
+          }
+        },
+        "button_LVjKgJ": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contattaci",
+            "button_link": "shopify:\/\/pages\/contact",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_zTAmet",
+        "text_3BfEGn",
+        "button_LVjKgJ"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "image_with_text_WC473K",
+    "custom_liquid_UVHikA",
+    "rich_text_wG4tC4",
+    "media_slideshow_B4wQMK",
+    "media_slideshow_4dXdnH",
+    "media-slideshow",
+    "carousel_LNwd36",
+    "carousel_Ftf9a7",
+    "rich_text_dThR3q",
+    "media_slideshow_7Dqk9t",
+    "media_slideshow_gw9Bg7",
+    "1726135227cad96adf",
+    "1720787699608f860d",
+    "popular-products",
+    "popular-products-2",
+    "image_with_text_q9PxB8",
+    "instagram-collage",
+    "rich_text_fbpHcz"
+  ]
+}

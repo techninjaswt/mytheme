@@ -1,0 +1,135 @@
+{% for block in blocks %}
+  {% assign mega_menu_trigger = block.settings.mega_menu_trigger | handle | strip %}
+  {% if block.settings.show_mega_menu_1 or block.settings.show_mega_menu_2 or block.settings.show_mega_menu_3 %}
+    {% assign promo = 'mega-menu__wrapper--promo' %}
+  {% endif %}
+{% endfor %}
+<div
+  class="mega-menu__wrapper mega-menu__wrapper--columns {{ promo }}"
+>
+  <ul class="mega-menu__list list-unstyled focus-inset">
+    {% for link in link.links %}
+      <li>
+        <a
+          href="{{ link.url }}"
+          class="header__menu-item mega-menu__link list-menu__item link link--text focus-inset caption-large{% if link.current %} header__menu-item--active{% endif %}"
+          {% if link.current %}
+            aria-current="page"
+          {% endif %}
+        >
+          <span>
+            {{ link.title | escape }}
+          </span>
+        </a>
+        {% if link.links != blank %}
+          <ul class="mega-menu__submenu list-menu motion-reduce">
+            {%- for link in link.links -%}
+              <li>
+                <a
+                  href="{{ link.url }}"
+                  class="header__menu-item mega-menu__submenu-item list-menu__item link link--text focus-inset caption-large{% if link.current %} header__menu-item--active{% endif %}"
+                  {% if link.current %}
+                    aria-current="page"
+                  {% endif %}
+                >
+                  <span>
+                    {{ link.title | escape }}
+                  </span>
+                </a>
+              </li>
+            {%- endfor -%}
+          </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+{% for block in blocks %}
+  {% assign mega_menu_trigger = block.settings.mega_menu_trigger | handle | strip %}
+  {% if link.handle == mega_menu_trigger %}
+    {% if block.settings.small_menu != blank %}
+      <ul class="header__small-menu small-menu mega-menu__small-menu list-unstyled" role="list">
+        {%- for link in block.settings.small_menu.links limit: 4 -%}
+          <li class="small-menu__item">
+            {%- if link != blank -%}
+              <a
+                href="{{ link.url }}"
+                class="small-menu__link link link--text focus-inset caption-large"
+                {% if link.current %}
+                  aria-current="page"
+                {% endif %}
+              >
+                <span>
+                  {{ link.title | escape }}
+                </span>
+              </a>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    {% if block.settings.show_mega_menu_1 %}
+      <div class="mega-menu__items">
+        {% if block.settings.show_mega_menu_1 %}
+          <div class="mega-menu__item color-{{ block.settings.color_scheme_1 }} mega-menu__item--{{ block.settings.height }}">
+            <span
+              class="mega-menu__overlay"
+              style="
+                --opacity-slide: {{ block.settings.overlay_opacity_1 }};
+                --opacity-slide-hover: {{ block.settings.overlay_opacity_1 | plus: 0.1 }}
+              "
+            ></span>
+            {% if block.settings.image_1 != blank %}
+              {%- capture sizes -%}
+								(min-width: 1700px) 1700px, (min-width: 1420px) 1420px, (min-width: 1100px) 1100px, (min-width: 710px) 710px, calc(100vw - 30px)
+							{%- endcapture -%}
+              {{
+                block.settings.image_1
+                | image_url: width: block.settings.image_1.width
+                | image_tag:
+                  loading: 'lazy',
+                  sizes: sizes,
+                  widths: '360, 550, 710, 1100, 1420, 1700, 1920',
+                  width: block.settings.image_1.width,
+                  class: 'mega-menu__item-image'
+              }}
+            {%- endif -%}
+            {% if block.settings.description_1 != blank %}
+              <div class="mega-menu__item-description subtitle">
+                {{ block.settings.description_1 }}
+              </div>
+            {%- endif -%}
+            {% if block.settings.heading_1 != blank %}
+              <div class="mega-menu__item-heading h3">
+                {{ block.settings.heading_1 }}
+              </div>
+            {%- endif -%}
+            {% if block.settings.show_button and block.settings.button_label != blank %}
+              <a
+                {% if block.settings.button_link.url != blank %}
+                  href="{{ block.settings.button_link }}"
+                {% endif %}
+                {% if block.settings.button_link.url == blank %}
+                  aria-disabled="true"
+                {% endif %}
+                class="mega-menu__button button button--{{ block.settings.button_style }} focus-inset"
+              >
+                {{ block.settings.button_label }}
+              </a>
+            {% endif %}
+            <a
+              {% if block.settings.button_link.url != blank %}
+                href="{{ block.settings.button_link }}"
+              {% endif %}
+              class="mega-menu__item-link-overlay"
+              {% if block.settings.button_link.url == blank %}
+                aria-disabled="true"
+              {% endif %}
+              aria-label="Promo banner"
+            ></a>
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+  {% endif %}
+{% endfor %}

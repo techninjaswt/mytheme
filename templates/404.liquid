@@ -1,9 +1,0 @@
-<div class="EmptyState">
-  <div class="Container">
-    <h3 class="EmptyState__Title Heading u-h5">{{ '404.general.title' | t }}</h3>
-    <p class="EmptyState__Description Text--subdued">{{ '404.general.content' | t }}</p>
-    <a href="/" class="EmptyState__Action Button Button--primary">{{ '404.general.button' | t }}</a>
-  </div>
-</div>
-
-<!--PERZONALIZATION-START Do not modify or delete this comment--><div id="perzonalization" class="perzonalization"></div><script type='text/javascript'>var productDetailsForPrz = {{ product | json }};var basketDetailsForPrz = {{ cart | json }};var filterDetailsForPrz = {{ collection | json }};var detailsForPrz = { userId: '{{ customer.id }}', language: '{{ shop.locale }}', currency:'{{ shop.currency }}' };var searchDetailsForPrz = {{ search.results | json }};if(productDetailsForPrz) { productDetailsForPrz.collections = []; }{% for collection in product.collections %}   if(productDetailsForPrz) { productDetailsForPrz.collections.push("{{ collection.title }}") }{% endfor %}if (filterDetailsForPrz) { filterDetailsForPrz.products = []; }{% for product in collection.products %}   if(filterDetailsForPrz) { filterDetailsForPrz.products.push({ id:"{{ product.id }}", handle:"{{ product.handle }}" }) }{% endfor %}</script><!--Do not modify or delete this comment PERZONALIZATION-END--> {% include 'BrokenLinkRedirect' %}

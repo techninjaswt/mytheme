@@ -1,0 +1,5 @@
+/*
+Generated time: September 26, 2024 12:18
+This file was created by the app developer. Feel free to contact the original developer with any questions. It was minified (compressed) by AVADA. AVADA do NOT own this script.
+*/
+.list-social{display:grid;grid-template-columns:repeat(auto-fit,4.4rem);justify-content:flex-start;gap:1.2rem;width:auto;margin:0;padding:0}@media screen and (min-width:990px){.list-social{justify-content:flex-start}}.list-social__item .icon{height:3.2rem;width:3.2rem;color:rgba(var(--color-social));transition:var(--duration-default)}.list-social__item:hover .icon{color:rgba(var(--color-social),.6)}.list-social__link{align-items:center;display:flex;padding:.6rem}

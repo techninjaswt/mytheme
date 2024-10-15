@@ -1,0 +1,573 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h3"
+          }
+        },
+        "judge_me_reviews_preview_badge_49tXPT": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
+        "cus_richtext_3yg8Q3": {
+          "type": "cusRichtext",
+          "settings": {
+            "custext": "<p><strong>{{ product.metafields.custom.add_price_m_m_.value }}<\/strong><strong> <\/strong>€\/<em>m²<\/em> <br\/> IVA esclusa<\/p>"
+          }
+        },
+        "text_zjGCDd": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>SPESSORE: <\/strong>{{ product.metafields.custom.thickness.value }} mm<\/p><p><strong>DIMENSIONE MEDIA PER PELLE: <\/strong>{{ product.metafields.custom.average_hide_size.value }} m2<\/p><p><strong>ORIGINE: <\/strong>{{ product.metafields.custom.leather_type.value }}<\/p>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "inventory_MTfBCH": {
+          "type": "inventory",
+          "settings": {
+            "icon_in_stock_more": "check_mark_2",
+            "icon_in_stock_less": "bell"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_quantity": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "wishlist_hero_custom_product_button_E9ayTH": {
+          "type": "shopify:\/\/apps\/wishlist-hero\/blocks\/custom-product-button\/a9a5079b-59e8-47cb-b659-ecf1c60b9b72",
+          "settings": {
+            "displayButtonMode": "~",
+            "contentAlignment": "center",
+            "buttonAlignment": "center",
+            "buttonFullwidth": true,
+            "removeBoxShadowAndBorder": false,
+            "horizontalPadding": 20,
+            "iconTopOffset": 0,
+            "addedCssClassNames": "",
+            "addedContainerStyles": ""
+          }
+        },
+        "dropdown_information_6DLjWf": {
+          "type": "dropdown_information",
+          "settings": {
+            "characteristics": false,
+            "heading": "Caratteristiche",
+            "description": "<p><strong>Formato: <\/strong>{{ product.metafields.custom.format.value }}<\/p><p><strong>Concia: <\/strong>{{ product.metafields.custom.tanning.value }}<\/p><p><strong>Referenza Articolo: <\/strong>{{ product.metafields.custom.codice_zerow.value }}<\/p><p><strong>Conceria: <\/strong>{{ product.metafields.custom.tannery_.value }}<\/p><p><\/p>",
+            "button_show": false,
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "dropdown_information_TzFJpj": {
+          "type": "dropdown_information",
+          "settings": {
+            "characteristics": false,
+            "heading": "Condizioni di Vendita",
+            "description": "<p>Tutti i nostri tessuti e pellami sono di alta qualità, provenienti da giacenze di magazzino. Non è previsto un ordine minimo; la quantità minima acquistabile è pari alla lunghezza più piccola disponibile indicata nella pagina del prodotto. I resi sono accettati solo in caso di difetti gravi nel materiale. Per assistenza, contatta il nostro servizio clienti.<\/p>",
+            "button_show": false,
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "dropdown_information_PgKzhw": {
+          "type": "dropdown_information",
+          "settings": {
+            "characteristics": false,
+            "heading": "Spedizione",
+            "description": "<p>Spediamo in Italia e all'estero. Gli ordini vengono elaborati entro 5-7 giorni lavorativi per i rotoli interi e entro 1-2 giorni lavorativi per i campioni. Le spese di spedizione sono calcolate al momento del checkout, in base alla destinazione e al peso del pacco. Dopo la spedizione, il tempo di consegna stimato è di 1-2 giorni lavorativi. Puoi seguire lo stato del tuo ordine tramite il nostro sito.<\/p>",
+            "button_show": false,
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "judge_me_reviews_preview_badge_49tXPT",
+        "cus_richtext_3yg8Q3",
+        "text_zjGCDd",
+        "variant_picker",
+        "inventory_MTfBCH",
+        "price",
+        "buy_buttons",
+        "wishlist_hero_custom_product_button_E9ayTH",
+        "dropdown_information_6DLjWf",
+        "dropdown_information_TzFJpj",
+        "dropdown_information_PgKzhw",
+        "description"
+      ],
+      "settings": {
+        "desktop_alignment": "right",
+        "mobile_alignment": "before",
+        "gallery_type": "single_aside",
+        "image_fit": "cover",
+        "image_fit_modal": "contain",
+        "enable_autoheight": false,
+        "columns_desktop": "2"
+      }
+    },
+    "17261345996e4c79a5": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_WUFhwU": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_WUFhwU"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "media_slideshow_4KC7Q7": {
+      "type": "media-slideshow",
+      "blocks": {
+        "media_slide_kRN8GH": {
+          "type": "media_slide",
+          "settings": {
+            "text_color_scheme": "",
+            "overlay_opacity": 0,
+            "enable_hover": true,
+            "show_video": true,
+            "video": "shopify:\/\/files\/videos\/Amo portarvi con me, raccontare di questo meraviglioso lavoro, di questo sogno che con immenso sacrificio e dedizione sto portando avanti….proverò a farlo più spesso, a parlarvi anche di tante realtà come la mia, che con amore portano .mp4",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "autoplay_video": true,
+            "muted_video": true,
+            "loop_video": true,
+            "show_icon_play": true,
+            "show_icon_sound": true,
+            "description_video": "",
+            "subheading": "Pellami",
+            "heading": "Recensione by Kairos",
+            "heading_size": "h2",
+            "description": "",
+            "additional_image_width": 150,
+            "position_content": "bottom",
+            "show_button": false,
+            "button_label": "Some label",
+            "button_link": "",
+            "button_style": "secondary",
+            "full_link": true
+          }
+        },
+        "media_slide_e6xwER": {
+          "type": "media_slide",
+          "settings": {
+            "text_color_scheme": "",
+            "overlay_opacity": 0,
+            "enable_hover": true,
+            "show_video": true,
+            "video": "shopify:\/\/files\/videos\/Exciting Collaboration Announcement!  We’re thrilled to partner with Zerow, a leader in sustainable materials.Together, we’re bringing you stylish streetwear crafted from premium, eco-friendly fabrics with a commitment to sustainability.mp4",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "autoplay_video": true,
+            "muted_video": true,
+            "loop_video": true,
+            "show_icon_play": true,
+            "show_icon_sound": true,
+            "description_video": "",
+            "subheading": "Tessuti",
+            "heading": "Recensione by Jonas.clothing",
+            "heading_size": "h2",
+            "description": "",
+            "additional_image_width": 150,
+            "position_content": "bottom",
+            "show_button": false,
+            "button_label": "Some label",
+            "button_link": "",
+            "button_style": "secondary",
+            "full_link": true
+          }
+        },
+        "media_slide_YNm3gm": {
+          "type": "media_slide",
+          "settings": {
+            "text_color_scheme": "",
+            "overlay_opacity": 0,
+            "enable_hover": true,
+            "show_video": true,
+            "video": "shopify:\/\/files\/videos\/The moment you’ve been waiting for!   We are thrilled to reveal the exquisite bag designed by Victor-Hart and brought to life with the premium materials and craftsmanship from ZEROW Lab. This masterpiece showcases our innovative design id.mp4",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "autoplay_video": true,
+            "muted_video": true,
+            "loop_video": true,
+            "show_icon_play": true,
+            "show_icon_sound": true,
+            "description_video": "",
+            "subheading": "Tessuti",
+            "heading": "Recensione by Victor Hart",
+            "heading_size": "h2",
+            "description": "",
+            "additional_image_width": 150,
+            "position_content": "bottom",
+            "show_button": false,
+            "button_label": "Some label",
+            "button_link": "",
+            "button_style": "secondary",
+            "full_link": true
+          }
+        }
+      },
+      "block_order": [
+        "media_slide_kRN8GH",
+        "media_slide_e6xwER",
+        "media_slide_YNm3gm"
+      ],
+      "settings": {
+        "header_overlay": true,
+        "layout": "half",
+        "full": true,
+        "gap": false,
+        "border_radius": false,
+        "mobile_hide": true,
+        "desktop_hide": false,
+        "aspect_ratio": "21\/9",
+        "bullets_color_scheme": "",
+        "position_bullets": "right",
+        "bullets_background": false,
+        "enable_navigation": false,
+        "navigation_color_scheme": "",
+        "navigation_position": "sides",
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "media_slideshow_mgmzaL": {
+      "type": "media-slideshow",
+      "blocks": {
+        "media_slide_wGwLxa": {
+          "type": "media_slide",
+          "settings": {
+            "text_color_scheme": "",
+            "overlay_opacity": 0,
+            "enable_hover": true,
+            "show_video": true,
+            "video": "shopify:\/\/files\/videos\/Amo portarvi con me, raccontare di questo meraviglioso lavoro, di questo sogno che con immenso sacrificio e dedizione sto portando avanti….proverò a farlo più spesso, a parlarvi anche di tante realtà come la mia, che con amore portano .mp4",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "autoplay_video": true,
+            "muted_video": true,
+            "loop_video": true,
+            "show_icon_play": true,
+            "show_icon_sound": true,
+            "description_video": "",
+            "subheading": "Pellami",
+            "heading": "Recensione by Kairos",
+            "heading_size": "h2",
+            "description": "",
+            "additional_image_width": 150,
+            "position_content": "bottom",
+            "show_button": false,
+            "button_label": "Some label",
+            "button_link": "",
+            "button_style": "secondary",
+            "full_link": true
+          }
+        },
+        "media_slide_a6HcBX": {
+          "type": "media_slide",
+          "settings": {
+            "text_color_scheme": "",
+            "overlay_opacity": 0,
+            "enable_hover": true,
+            "show_video": true,
+            "video": "shopify:\/\/files\/videos\/Exciting Collaboration Announcement!  We’re thrilled to partner with Zerow, a leader in sustainable materials.Together, we’re bringing you stylish streetwear crafted from premium, eco-friendly fabrics with a commitment to sustainability.mp4",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "autoplay_video": true,
+            "muted_video": true,
+            "loop_video": true,
+            "show_icon_play": true,
+            "show_icon_sound": true,
+            "description_video": "",
+            "subheading": "Tessuti",
+            "heading": "Recensione by Jonas.clothing",
+            "heading_size": "h2",
+            "description": "",
+            "additional_image_width": 150,
+            "position_content": "bottom",
+            "show_button": false,
+            "button_label": "Some label",
+            "button_link": "",
+            "button_style": "secondary",
+            "full_link": true
+          }
+        },
+        "media_slide_Hamjqb": {
+          "type": "media_slide",
+          "settings": {
+            "text_color_scheme": "",
+            "overlay_opacity": 0,
+            "enable_hover": true,
+            "show_video": true,
+            "video": "shopify:\/\/files\/videos\/The moment you’ve been waiting for!   We are thrilled to reveal the exquisite bag designed by Victor-Hart and brought to life with the premium materials and craftsmanship from ZEROW Lab. This masterpiece showcases our innovative design id.mp4",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "autoplay_video": true,
+            "muted_video": true,
+            "loop_video": true,
+            "show_icon_play": true,
+            "show_icon_sound": true,
+            "description_video": "",
+            "subheading": "Tessuti",
+            "heading": "Recensione by Victor Hart",
+            "heading_size": "h2",
+            "description": "",
+            "additional_image_width": 150,
+            "position_content": "bottom",
+            "show_button": false,
+            "button_label": "Some label",
+            "button_link": "",
+            "button_style": "secondary",
+            "full_link": true
+          }
+        }
+      },
+      "block_order": [
+        "media_slide_wGwLxa",
+        "media_slide_a6HcBX",
+        "media_slide_Hamjqb"
+      ],
+      "settings": {
+        "header_overlay": true,
+        "layout": "half",
+        "full": true,
+        "gap": false,
+        "border_radius": false,
+        "mobile_hide": false,
+        "desktop_hide": true,
+        "aspect_ratio": "full",
+        "bullets_color_scheme": "",
+        "position_bullets": "right",
+        "bullets_background": false,
+        "enable_navigation": false,
+        "navigation_color_scheme": "",
+        "navigation_position": "sides",
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "color_scheme": "background-1",
+        "heading": "Ti potrebbe interessare",
+        "heading_size": "h2",
+        "products_limit": 6,
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_collection": true,
+        "show_desc": false,
+        "columns_mobile": "1",
+        "padding_top": "m",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "17273615431903a6d5": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_7VL8Uq": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_7VL8Uq"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "instagram_collage_AhaBpY": {
+      "type": "instagram-collage",
+      "blocks": {
+        "instagram_collage_image_rTGQCp": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5orizzontalehome.jpg"
+          }
+        },
+        "instagram_collage_image_miLPBY": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2024-09-04_at_15.51.07.png"
+          }
+        },
+        "instagram_collage_image_VRkg3G": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2024-09-04_at_15.48.13.png"
+          }
+        },
+        "instagram_collage_image_CAibfz": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cover-pitone-deadstock.jpg"
+          }
+        },
+        "instagram_collage_image_E66aQJ": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2024-09-04_at_15.49.39.png"
+          }
+        },
+        "instagram_collage_image_JPpPzG": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2024-09-04_at_15.52.07.png"
+          }
+        },
+        "instagram_collage_image_yNcEtD": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2024-09-04_at_15.51.38.png"
+          }
+        },
+        "instagram_collage_image_y7dWTr": {
+          "type": "instagram-collage_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2024-09-04_at_15.51.23.png"
+          }
+        }
+      },
+      "block_order": [
+        "instagram_collage_image_rTGQCp",
+        "instagram_collage_image_miLPBY",
+        "instagram_collage_image_VRkg3G",
+        "instagram_collage_image_CAibfz",
+        "instagram_collage_image_E66aQJ",
+        "instagram_collage_image_JPpPzG",
+        "instagram_collage_image_yNcEtD",
+        "instagram_collage_image_y7dWTr"
+      ],
+      "settings": {
+        "section_type": "slideshow_1",
+        "subheading": "",
+        "heading": "I prodotti creati con i nostri pellami",
+        "heading_size": "h2",
+        "speed_slider_1": 500,
+        "speed_slider_2": 700,
+        "column_to_show": 6,
+        "image_ratio": "square",
+        "show_account": false,
+        "name_account": "Visualizza di più in @zerow_it",
+        "link_account": "shopify:\/\/collections\/all",
+        "show_description": false,
+        "button_label": "Seguici",
+        "button_link": "https:\/\/www.instagram.com\/zerow_it\/",
+        "button_style": "primary",
+        "icon": "instagram",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "multicolumn_N4Bhx9": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_nQbbk4": {
+          "type": "column",
+          "settings": {
+            "icon": "hand",
+            "heading": "Servizio Clienti",
+            "text": "<p>Il nostro team dedicato fornisce assistenza tempestiva, impegnato a rispondere alle vostre domande.<\/p>",
+            "show_button": true,
+            "button_label": "Contattaci",
+            "button_link": "shopify:\/\/pages\/contact",
+            "button_style": "primary",
+            "full_link": false,
+            "additional_text_1": "",
+            "additional_text_2": ""
+          }
+        },
+        "column_Y9nwKL": {
+          "type": "column",
+          "settings": {
+            "icon": "check_mark_3",
+            "heading": "Soddisfazione garantita",
+            "text": "<p>Investi nei nostri mobili con assoluta fiducia, supportato dalla nostra garanzia di soddisfazione di 30 giorni.<\/p>",
+            "show_button": true,
+            "button_label": "Saperne di più",
+            "button_link": "#",
+            "button_style": "primary",
+            "full_link": false,
+            "additional_text_1": "",
+            "additional_text_2": ""
+          }
+        },
+        "column_GimVKm": {
+          "type": "column",
+          "settings": {
+            "icon": "box",
+            "heading": "Consegna gratuita",
+            "text": "<p>Goditi un'esperienza di acquisto senza interruzioni, facilitata dal nostro servizio di spedizione gratuito.<\/p>",
+            "show_button": true,
+            "button_label": "Saperne di più",
+            "button_link": "#",
+            "button_style": "primary",
+            "full_link": false,
+            "additional_text_1": "",
+            "additional_text_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_nQbbk4",
+        "column_Y9nwKL",
+        "column_GimVKm"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_type": "solid",
+        "color_scheme": "",
+        "multicolumn_to_show": 3,
+        "heading": "",
+        "heading_size": "h2",
+        "image_width": "medium",
+        "image_ratio": "portrait",
+        "object_fit": "cover",
+        "swipe_on_mobile": false,
+        "card_heading_size": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "17261345996e4c79a5",
+    "media_slideshow_4KC7Q7",
+    "media_slideshow_mgmzaL",
+    "product-recommendations",
+    "17273615431903a6d5",
+    "instagram_collage_AhaBpY",
+    "multicolumn_N4Bhx9"
+  ]
+}

@@ -1,0 +1,108 @@
+.benefits {
+  width: 100%;
+  overflow: hidden;
+}
+.benefits__container {
+  display: grid;
+  width: calc(100% + 0.1rem);
+  padding-top: 0.1rem;
+}
+.benefits__container--1 {
+  grid-template-columns: 1fr;
+}
+.benefits__container--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.benefits__container--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.benefits__container--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.benefits__container--5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+.benefits__container--left .benefits__item {
+  justify-content: flex-start;
+}
+@media (min-width: 750px) {
+  .benefits__container--center .benefits__item {
+    justify-content: center;
+  }
+}
+.benefits__item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 1rem;
+  min-height: 12rem;
+  border: 0.1rem solid rgb(var(--color-border));
+  box-sizing: border-box;
+  margin-top: -0.1rem;
+  margin-left: -0.1rem;
+}
+@media (min-width: 750px) {
+  .benefits__item {
+    min-height: 15rem;
+  }
+}
+@media (min-width: 990px) {
+  .benefits__item {
+    min-height: 18rem;
+  }
+}
+.benefits__item svg {
+  transform: scale(1.2);
+  color: rgb(var(--color-foreground-title));
+}
+@media (min-width: 990px) {
+  .benefits__item svg {
+    transform: scale(1.3);
+  }
+}
+.benefits__icon {
+  min-width: 3.6rem;
+  max-width: 3.6rem;
+  height: 3.6rem;
+}
+.benefits__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.benefits__icon img:only-child {
+  display: block !important;
+}
+.benefits__heading {
+  margin: 0;
+}
+
+@media (prefers-color-scheme: light) {
+  .benefits__icon img:first-child {
+    display: block;
+  }
+  .benefits__icon img:last-child {
+    display: none;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .benefits__icon img:first-child {
+    display: none;
+  }
+  .benefits__icon img:last-child {
+    display: block;
+  }
+}
+[data-scheme=light] .benefits__icon img:first-child {
+  display: block;
+}
+[data-scheme=light] .benefits__icon img:last-child {
+  display: none;
+}
+
+[data-scheme=dark] .benefits__icon img:first-child {
+  display: none;
+}
+[data-scheme=dark] .benefits__icon img:last-child {
+  display: block;
+}

@@ -1,0 +1,133 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-account",
+      "settings": {
+        "heading_orders": "Nessun ordine disponibile",
+        "text_orders": "Non hai ancora effettuato ordini. Una volta che avrai effettuato un ordine, apparirà qui.",
+        "heading_addresses": "Nessun indirizzo salvato",
+        "text_addresses": "Non hai ancora aggiunto indirizzi alla tua rubrica. Puoi aggiungere un nuovo indirizzo cliccando sul pulsante \"Aggiungi indirizzo\".",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "xs",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "172561760691fb88ea": {
+      "type": "apps",
+      "blocks": {
+        "amplius_customer_fields_metafield_editor_3J36RU": {
+          "type": "shopify:\/\/apps\/amplius-customer-fields\/blocks\/metafield-editor\/eaa81ad4-be0b-4bba-b7f0-43630aba9eaf",
+          "settings": {
+            "alignment": "flex-start",
+            "top_spacing": 50,
+            "bottom_spacing": 50,
+            "width": 512,
+            "title_font_size": 24,
+            "title_padding_bottom": 0,
+            "description_font_size": 16,
+            "description_padding_bottom": 0,
+            "consent_disclaimer_font_size": 12,
+            "consent_disclaimer_padding_top": 0,
+            "input_height": 32,
+            "input_border_radius": 0,
+            "input_border_color": "",
+            "input_border_width": 1,
+            "field_spacing": 12,
+            "submit_button_width": 512,
+            "submit_button_height": 40,
+            "submit_button_background_color": "",
+            "submit_button_text_color": "#000000",
+            "submit_button_border_color": "#000000",
+            "submit_button_border_width": 1,
+            "submit_button_border_radius": 0
+          }
+        }
+      },
+      "block_order": [
+        "amplius_customer_fields_metafield_editor_3J36RU"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "popular-products": {
+      "type": "popular-products",
+      "disabled": true,
+      "settings": {
+        "meta": "",
+        "subheading": "",
+        "heading": "Può Interessarti",
+        "heading_size": "h2",
+        "product_list": [
+          "pelle-cavallino-stampa-leopardo",
+          "cavallino-zebrato-premium",
+          "denim-misto-cotone-lino-premium",
+          "felpa-cotone-blu-notte",
+          "fodera-di-viscosa-morbida"
+        ],
+        "products_to_show": 4,
+        "image_ratio": "landscape",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_collection": true,
+        "show_desc": false,
+        "columns_mobile": "1",
+        "button_show": false,
+        "button_label": "Button label",
+        "button_style": "primary",
+        "button_link": "",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "categories_list_gUMCCi": {
+      "type": "categories-list",
+      "blocks": {
+        "collection_item_p6mDah": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "tessuti",
+            "color_scheme": "",
+            "color_scheme_2": "",
+            "show_video": false,
+            "overlay_opacity": 0.4
+          }
+        },
+        "collection_item_437w33": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "pellami",
+            "color_scheme": "",
+            "color_scheme_2": "",
+            "show_video": false,
+            "overlay_opacity": 0.4
+          }
+        }
+      },
+      "block_order": [
+        "collection_item_p6mDah",
+        "collection_item_437w33"
+      ],
+      "settings": {
+        "subheading": "Esplora le nostre collezioni",
+        "heading": "Potrebbe Interessarti",
+        "heading_size": "h2",
+        "layout": "rows",
+        "collections_to_show": 2,
+        "show_button": false,
+        "button_label": "Explore All",
+        "button_link": "",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "172561760691fb88ea",
+    "popular-products",
+    "categories_list_gUMCCi"
+  ]
+}

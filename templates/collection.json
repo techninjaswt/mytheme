@@ -1,0 +1,63 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "color_scheme": "background-1",
+        "layout": "column",
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "opacity_overlay": 0.3,
+        "margin_top": "no-indent",
+        "margin_bottom": "s"
+      }
+    },
+    "1726213187c521b09d": {
+      "type": "apps",
+      "blocks": {
+        "avada_seo_suite_avada_after_collection_block_djQgDL": {
+          "type": "shopify:\/\/apps\/avada-seo-suite\/blocks\/avada-after-collection-block\/15507c6e-1aa3-45d3-b698-7e175e033440",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "avada_seo_suite_avada_after_collection_block_djQgDL"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "meta": "",
+        "products_per_page": 12,
+        "image_ratio": "square",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_collection": true,
+        "show_desc": false,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "default_open": false,
+        "enable_sorting": false,
+        "image_filter_ratio": "4\/5",
+        "image_filter_fit": "cover",
+        "image_filter_columns": 4,
+        "columns_mobile": "2",
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "1726213187c521b09d",
+    "product-grid"
+  ]
+}

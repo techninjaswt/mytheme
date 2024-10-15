@@ -1,0 +1,36 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-search",
+      "custom_css": [
+        ".search-results__top {display: none;}",
+        "ul.collection-results.collection-results--1-mobile {display: none;}"
+      ],
+      "settings": {
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_collection": true,
+        "show_desc": false,
+        "article_show_tags": true,
+        "article_show_date": true,
+        "article_show_author": true,
+        "article_show_desc": false,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "default_open": true,
+        "enable_sorting": false,
+        "image_filter_ratio": "4\/5",
+        "image_filter_fit": "cover",
+        "image_filter_columns": 2,
+        "columns_mobile": "1",
+        "padding_top": "no-indent",
+        "padding_bottom": "s"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

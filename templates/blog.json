@@ -1,0 +1,24 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "layout": "overlay",
+        "description": "",
+        "image_height": "medium",
+        "color_scheme": "",
+        "opacity_overlay": 0.3,
+        "show_image": true,
+        "show_tags": true,
+        "show_date": true,
+        "show_author": true,
+        "show_excerpt": false,
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

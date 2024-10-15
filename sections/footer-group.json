@@ -1,0 +1,91 @@
+{
+  "type": "footer",
+  "name": "t:sections.footer.settings.footer-group.label",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer-0": {
+          "type": "logo_info",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo-vettoriale-zerow-DEF-bianco.png",
+            "logo_width": 90,
+            "description": "<strong>Zerow <\/strong>sta per Zero Waste. Siamo il punto di riferimento per tessuti e pellami sostenibili, provenienti da giacenze di magazzino di grandi aziende italiane. Zerow fa parte della comunità della Fondazione Ellen MacArthur."
+          }
+        },
+        "footer-1": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Tessuti",
+            "menu": "menu-footer-tessuti",
+            "default_open": false
+          }
+        },
+        "footer-2": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Pellami",
+            "menu": "menu-footer-pellami",
+            "default_open": false
+          }
+        },
+        "footer-3": {
+          "type": "link_list",
+          "settings": {
+            "heading": "About",
+            "menu": "menu-footer-about",
+            "default_open": false
+          }
+        },
+        "link_list_rjwFPz": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Supporto & Termini",
+            "menu": "footer",
+            "default_open": false
+          }
+        },
+        "footer-4": {
+          "type": "contacts",
+          "settings": {
+            "description": "Contatti",
+            "contact_info": "<p>ZEROW - S.R.L. <\/p><p>Tel: +39 055 051 6432<br\/>Lun-Ven 09:00 – 18:00 CET<\/p><p><a>support@zerow.it<\/a><\/p><p>Via Newton 104<br\/>50018 Scandicci (FI)<br\/>Italia<\/p>"
+          }
+        },
+        "footer-5": {
+          "type": "subscribe",
+          "settings": {
+            "heading": "Iscriviti alla Newsletter !",
+            "text": "Ricevi aggiornamenti sulla nuove offerte.",
+            "additional_text": "",
+            "button_style": "secondary"
+          }
+        }
+      },
+      "block_order": [
+        "footer-0",
+        "footer-1",
+        "footer-2",
+        "footer-3",
+        "link_list_rjwFPz",
+        "footer-4",
+        "footer-5"
+      ],
+      "settings": {
+        "color_scheme": "background-3",
+        "show_border": false,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_social": true,
+        "enable_copyright_date": true,
+        "enable_copyright_shopname": true,
+        "show_policy": true,
+        "enable_follow_on_shop": true
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

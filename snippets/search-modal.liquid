@@ -1,0 +1,149 @@
+<div class="search__modal">
+  <div class="container">
+    <div class="search__items">
+      {% if section.settings.show_collection_card and section.settings.collection_list != blank %}
+        <div class="search__categories">
+          <div class="search__categories-wrapper">
+            <ul class="search__categories-list list-unstyled" role="list">
+              <li class="search__categories-item">
+                {{ 'general.search.popular_items' | t }}
+              </li>
+              {%- for collection in section.settings.collection_list -%}
+                <li class="search__categories-item">
+                  <a
+                    class="search__categories-link"
+                    {% if collection.all_products_count > 0 %} 
+                      href="{{ collection.url }}"
+                    {% endif %}
+                  >
+                    {{ collection.title }}
+                  </a>
+                </li>
+              {%- endfor -%}
+            </ul>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+    {% if section.settings.show_search_block or section.settings.show_search_block_2 %}
+      <div class="search__promo-blocks">
+        {% if section.settings.show_search_block %}
+          <div class="search__block color-{{ section.settings.search_color_scheme }}">
+						 <span
+              class="search__block-overlay"
+              style="opacity: {{ section.settings.overlay_opacity }}"
+            ></span>
+            {% if section.settings.search_image != blank %}
+              {%- capture sizes -%}
+								(min-width: 1700px) 1700px, (min-width: 1420px) 1420px, (min-width: 1100px) 1100px, (min-width: 710px) 710px, calc(100vw - 30px)
+							{%- endcapture -%}
+              {{
+                section.settings.search_image
+                | image_url: width: section.settings.search_image.width
+                | image_tag:
+                  loading: 'lazy',
+                  sizes: sizes,
+                  widths: '360, 550, 710, 1100, 1420, 1700, 1920',
+                  width: section.settings.search_image.width,
+                  class: 'search__block-image'
+              }}
+            {%- endif -%}
+						{% if section.settings.search_subheading != blank %}
+              <span class="search__subheading subtitle">
+                {{ section.settings.search_subheading }}
+              </span>
+            {%- endif -%}
+            {% if section.settings.search_heading != blank %}
+              <div class="search__heading h3">
+                {{ section.settings.search_heading }}
+              </div>
+            {%- endif -%}
+            {%- if section.settings.button_label != blank -%}
+              <a
+                {% if section.settings.button_link.url != blank %}
+                  href="{{ section.settings.button_link }}"
+                {% endif %}
+                class="button button--{{ section.settings.button_style }} focus-inset"
+                {% if section.settings.button_link.url == blank %}
+                  aria-disabled="true"
+                {% endif %}
+              >
+                <span>
+                  {{ section.settings.button_label | escape }}
+                </span>
+              </a>
+            {%- endif -%}
+						<a
+              {% if section.settings.button_link.url != blank %}
+                href="{{ section.settings.button_link }}"
+              {% endif %}
+              class="search__link-overlay"
+              {% if section.settings.button_link.url == blank %}
+                aria-disabled="true"
+              {% endif %}
+              aria-label="Promo banner"
+            ></a>
+          </div>
+        {% endif %}
+        {% if section.settings.show_search_block_2 %}
+          <div class="search__block color-{{ section.settings.search_color_scheme_2 }}">
+						<span
+              class="search__block-overlay"
+              style="opacity: {{ section.settings.overlay_opacity_2 }}"
+            ></span>
+            {% if section.settings.search_image_2 != blank %}
+              {%- capture sizes -%}
+								(min-width: 1700px) 1700px, (min-width: 1420px) 1420px, (min-width: 1100px) 1100px, (min-width: 710px) 710px, calc(100vw - 30px)
+							{%- endcapture -%}
+              {{
+                section.settings.search_image_2
+                | image_url: width: section.settings.search_image_2.width
+                | image_tag:
+                  loading: 'lazy',
+                  sizes: sizes,
+                  widths: '360, 550, 710, 1100, 1420, 1700, 1920',
+                  width: section.settings.search_image_2.width,
+                  class: 'search__block-image'
+              }}
+            {%- endif -%}
+						{% if section.settings.search_subheading_2 != blank %}
+              <span class="search__subheading subtitle">
+                {{ section.settings.search_subheading_2 }}
+              </span>
+            {%- endif -%}
+            {% if section.settings.search_heading_2 != blank %}
+              <div class="search__heading h3">
+                {{ section.settings.search_heading_2 }}
+              </div>
+            {%- endif -%}
+            {%- if section.settings.button_label_2 != blank -%}
+              <a
+                {% if section.settings.button_link_2.url != blank %}
+                  href="{{ section.settings.button_link_2 }}"
+                {% endif %}
+                class="button button--{{ section.settings.button_style_2 }} focus-inset"
+                {% if section.settings.button_link_2.url == blank %}
+                  aria-disabled="true"
+                {% endif %}
+              >
+                <span>
+                  {{ section.settings.button_label_2 | escape }}
+                </span>
+              </a>
+            {%- endif -%}
+						<a
+              {% if section.settings.button_link_2.url != blank %}
+                href="{{ section.settings.button_link_2 }}"
+              {% endif %}
+              class="search__link-overlay"
+              {% if section.settings.button_link_2.url == blank %}
+                aria-disabled="true"
+              {% endif %}
+              aria-label="Promo banner"
+            ></a>
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</div>

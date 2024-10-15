@@ -1,0 +1,69 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "disabled": true,
+      "settings": {
+        "title": "Esplora le Nostre Collezioni",
+        "sort": "products_low",
+        "color_scheme": "background-4",
+        "image": "collection",
+        "image_ratio": "landscape",
+        "image_fit": "cover",
+        "show_desc": true,
+        "overlay_opacity": 0.3,
+        "collections_to_show": 1,
+        "show_button": true,
+        "button_label": "Esplora Collezione",
+        "button_style": "secondary",
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "categories_list_3wxHiq": {
+      "type": "categories-list",
+      "blocks": {
+        "collection_item_KR9Kzg": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "tessuti",
+            "color_scheme": "background-4",
+            "color_scheme_2": "background-4",
+            "show_video": false,
+            "overlay_opacity": 0.4
+          }
+        },
+        "collection_item_6NGnFm": {
+          "type": "collection_item",
+          "settings": {
+            "collection": "pellami",
+            "color_scheme": "background-3",
+            "color_scheme_2": "",
+            "show_video": false,
+            "overlay_opacity": 0.4
+          }
+        }
+      },
+      "block_order": [
+        "collection_item_KR9Kzg",
+        "collection_item_6NGnFm"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "Collezioni",
+        "heading_size": "h2",
+        "layout": "rows",
+        "collections_to_show": 1,
+        "show_button": false,
+        "button_label": "Explore All",
+        "button_link": "",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "categories_list_3wxHiq"
+  ]
+}

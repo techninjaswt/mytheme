@@ -1,0 +1,212 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "color_scheme": "background-1",
+        "layout": "column",
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "opacity_overlay": 0.3,
+        "margin_top": "no-indent",
+        "margin_bottom": "s"
+      }
+    },
+    "carousel_nxU4VF": {
+      "type": "carousel",
+      "blocks": {
+        "carousel_slide_6aVUf3": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Denim_chiaro_100_cotone_-_Zerow_1a.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.1,
+            "text_color_scheme": "background-3",
+            "heading": "Denim",
+            "link": "shopify:\/\/collections\/tessuto-denim"
+          }
+        },
+        "carousel_slide_VYMc89": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/JACQUARD-FANTASIA--DI-COTONE-MISTO-POLIESTERENYLON-STRETCH-dettaglio.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.3,
+            "text_color_scheme": "background-3",
+            "heading": "Jacquard",
+            "link": "shopify:\/\/collections\/tessuto-jacquard"
+          }
+        },
+        "carousel_slide_jj6hRf": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Felpa_in_Cotone_-_Zerow.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.2,
+            "text_color_scheme": "background-3",
+            "heading": "Felpa",
+            "link": "shopify:\/\/collections\/tessuto-felpa"
+          }
+        },
+        "carousel_slide_8FAnkK": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/manichino-S23955_66916c81-805b-4267-823c-4166d3f79a1f.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.1,
+            "text_color_scheme": "",
+            "heading": "Jersey",
+            "link": "shopify:\/\/collections\/tessuti-jersey"
+          }
+        },
+        "carousel_slide_gA79CW": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fodera_100_Cupro_-_Zerow.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.1,
+            "text_color_scheme": "",
+            "heading": "Fodera",
+            "link": "shopify:\/\/collections\/fodera-in-cotone"
+          }
+        },
+        "carousel_slide_FzeRiG": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/s60535-2_c03466fb-0768-4769-8b9b-70b7a0521734.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.1,
+            "text_color_scheme": "background-3",
+            "heading": "Velluto",
+            "link": "shopify:\/\/collections\/velluto"
+          }
+        },
+        "carousel_slide_EnwEdr": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Crepe-fancy-tweed-rosso-e-azzurro-cover.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.5,
+            "text_color_scheme": "background-3",
+            "heading": "Tweed",
+            "link": "shopify:\/\/collections\/tweed"
+          }
+        },
+        "carousel_slide_fANGRQ": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/FINE-POPELINE--cover.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.1,
+            "text_color_scheme": "background-3",
+            "heading": "Popeline",
+            "link": ""
+          }
+        },
+        "carousel_slide_YPei9j": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Drill_check_di_cotone_bianco_-_Zerow_2.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.1,
+            "text_color_scheme": "",
+            "heading": "Tartan e check",
+            "link": "shopify:\/\/collections\/tartan"
+          }
+        },
+        "carousel_slide_CqcQgn": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Gabardine_gessato_di_lana_blu_scuro_-_Zerow_b.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.2,
+            "text_color_scheme": "",
+            "heading": "Gabardine",
+            "link": "shopify:\/\/collections\/tessuto-gabardine"
+          }
+        },
+        "carousel_slide_iLRf9G": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MUSSOLA-PLUMETILS-DI-COTONE-PRONTO-PER-STAMPA--dettaglio_c45034fa-3711-43de-8287-dfbec0b0040c.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.1,
+            "text_color_scheme": "background-3",
+            "heading": "Mussola",
+            "link": "shopify:\/\/collections\/tessuto-mussola-muslin"
+          }
+        }
+      },
+      "block_order": [
+        "carousel_slide_6aVUf3",
+        "carousel_slide_VYMc89",
+        "carousel_slide_jj6hRf",
+        "carousel_slide_8FAnkK",
+        "carousel_slide_gA79CW",
+        "carousel_slide_FzeRiG",
+        "carousel_slide_EnwEdr",
+        "carousel_slide_fANGRQ",
+        "carousel_slide_YPei9j",
+        "carousel_slide_CqcQgn",
+        "carousel_slide_iLRf9G"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "",
+        "heading_size": "h2",
+        "columns": 5,
+        "image_ratio": "landscape",
+        "button_show": false,
+        "button_label": "",
+        "button_link": "",
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "meta": "<p>\/m<\/p>",
+        "products_per_page": 12,
+        "image_ratio": "square",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_collection": true,
+        "show_desc": false,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "default_open": false,
+        "enable_sorting": true,
+        "image_filter_ratio": "4\/5",
+        "image_filter_fit": "cover",
+        "image_filter_columns": 4,
+        "columns_mobile": "2",
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "17262130137f39aa29": {
+      "type": "apps",
+      "blocks": {
+        "avada_seo_suite_avada_after_collection_block_pUHrQE": {
+          "type": "shopify:\/\/apps\/avada-seo-suite\/blocks\/avada-after-collection-block\/15507c6e-1aa3-45d3-b698-7e175e033440",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "avada_seo_suite_avada_after_collection_block_pUHrQE"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "carousel_nxU4VF",
+    "product-grid",
+    "17262130137f39aa29"
+  ]
+}

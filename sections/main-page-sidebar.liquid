@@ -1,0 +1,253 @@
+{{ 'section-main-page-sidebar.css' | asset_url | stylesheet_tag }}
+{{ 'component-rte.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  {% render 'section-padding' %}
+{%- endstyle -%}
+
+<div class="section-{{ section.id }}-padding container">
+  <div class="page__wrapper page__wrapper--{{ section.settings.sidebar_position }}">
+    <div class="page__content">
+      <div class="page-header">
+        <div class="page-header__inner">
+          <h1 class="main-page-title page-title title--page title--section-m-none h2">
+            {{ page.title | escape }}
+          </h1>
+        </div>
+      </div>
+      <div class="rte">
+        {{ page.content | replace: '<img', '<img loading="lazy"' | replace: '<iframe', '<iframe loading="lazy"' | replace: '<video', '<video preload="none"' }}
+      </div>
+    </div>
+    <aside class="page__sidebar sidebar sidebar--{{ section.settings.sidebar_width }}">
+      <div class="sidebar__wrapper color-{{ section.settings.color_scheme }} background">
+        {%- if section.settings.subheading != blank -%}
+          <div class="subtitle">{{ section.settings.subheading }}</div>
+        {%- endif -%}
+        {%- if section.settings.heading != blank -%}
+          <h2 class="sidebar__heading title--section h4 title--section-m-none {{ section.settings.heading_size }}">
+            {{ section.settings.heading }}
+          </h2>
+        {%- endif -%}
+        {% if section.settings.text != blank %}
+          <div class="sidebar__text">
+            {{ section.settings.text }}
+          </div>
+        {% endif %}
+
+        {%- if section.settings.show_button -%}
+          <a
+            {% if section.settings.button_link != blank %}
+              href="{{ section.settings.button_link }}"
+            {% endif %}
+            class="button sidebar__button button--{{ section.settings.button_style }} focus-inset"
+            {% if section.settings.button_link == blank %}
+              aria-disabled="true"
+            {% endif %}
+          >
+            {{- section.settings.button_label | escape -}}
+          </a>
+        {%- endif -%}
+      </div>
+    </aside>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.main-page-sidebar.name",
+  "tag": "section",
+  "class": "page-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.sidebar.settings.header.content"
+    },
+    {
+      "type": "select",
+      "id": "sidebar_position",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.sidebar.settings.sidebar_position.options__1.label"
+        },
+        {
+          "value": "right",
+          "label": "t:sections.sidebar.settings.sidebar_position.options__2.label"
+        }
+      ],
+      "default": "right",
+      "label": "t:sections.sidebar.settings.sidebar_position.label"
+    },
+    {
+      "type": "select",
+      "id": "sidebar_width",
+      "options": [
+        {
+          "value": "small",
+          "label": "t:sections.sidebar.settings.sidebar_width.options__1.label"
+        },
+        {
+          "value": "medium",
+          "label": "t:sections.sidebar.settings.sidebar_width.options__2.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.sidebar.settings.sidebar_width.options__3.label"
+        }
+      ],
+      "default": "medium",
+      "label": "t:sections.sidebar.settings.sidebar_width.label"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "default": "background-2",
+      "label": "t:sections.all.color_scheme.label"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "default": "Subheading",
+      "label": "t:sections.all.subheading.label"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Some heading for this section",
+      "label": "t:sections.all.heading.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h3",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h2",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "default": "<p>Description of your company, products, collections, shipping and so on. There may be several paragraphs here.</p>",
+      "label": "t:sections.all.text.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_button",
+      "default": false,
+      "label": "t:sections.all.button.button_show.label"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "Explore All",
+      "label": "t:sections.all.button.button_label.label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "t:sections.all.button.button_link.label"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "options": [
+        {
+          "value": "primary",
+          "label": "t:sections.all.button.button_style.options__1.label"
+        },
+        {
+          "value": "secondary",
+          "label": "t:sections.all.button.button_style.options__2.label"
+        },
+        {
+          "value": "tertiary",
+          "label": "t:sections.all.button.button_style.options__3.label"
+        }
+      ],
+      "default": "primary",
+      "label": "t:sections.all.button.button_style.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.section-padding.header.content"
+    },
+    {
+      "type": "select",
+      "id": "padding_top",
+      "options": [
+        {
+          "value": "no-indent",
+          "label": "t:sections.all.section-padding.options__1.label"
+        },
+        {
+          "value": "xs",
+          "label": "t:sections.all.section-padding.options__2.label"
+        },
+        {
+          "value": "s",
+          "label": "t:sections.all.section-padding.options__3.label"
+        },
+        {
+          "value": "m",
+          "label": "t:sections.all.section-padding.options__4.label"
+        },
+        {
+          "value": "l",
+          "label": "t:sections.all.section-padding.options__5.label"
+        },
+        {
+          "value": "xl",
+          "label": "t:sections.all.section-padding.options__6.label"
+        }
+      ],
+      "default": "xs",
+      "label": "t:sections.all.section-padding.padding_top.label"
+    },
+    {
+      "type": "select",
+      "id": "padding_bottom",
+      "options": [
+        {
+          "value": "no-indent",
+          "label": "t:sections.all.section-padding.options__1.label"
+        },
+        {
+          "value": "xs",
+          "label": "t:sections.all.section-padding.options__2.label"
+        },
+        {
+          "value": "s",
+          "label": "t:sections.all.section-padding.options__3.label"
+        },
+        {
+          "value": "m",
+          "label": "t:sections.all.section-padding.options__4.label"
+        },
+        {
+          "value": "l",
+          "label": "t:sections.all.section-padding.options__5.label"
+        },
+        {
+          "value": "xl",
+          "label": "t:sections.all.section-padding.options__6.label"
+        }
+      ],
+      "default": "m",
+      "label": "t:sections.all.section-padding.padding_bottom.label"
+    }
+  ]
+}
+{% endschema %}

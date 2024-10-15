@@ -1,0 +1,152 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "color_scheme": "background-1",
+        "layout": "column",
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "opacity_overlay": 0.3,
+        "margin_top": "no-indent",
+        "margin_bottom": "s"
+      }
+    },
+    "carousel_nxU4VF": {
+      "type": "carousel",
+      "blocks": {
+        "carousel_slide_FAHiC7": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vitello_Stampato_Nero_-_Zerow_1.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.1,
+            "text_color_scheme": "background-3",
+            "heading": "Pelle stampata",
+            "link": "shopify:\/\/collections\/pelle-stampata"
+          }
+        },
+        "carousel_slide_8FAnkK": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vitello_pieno_fiore_blue_-_Zerow.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.1,
+            "text_color_scheme": "",
+            "heading": "Vitello",
+            "link": ""
+          }
+        },
+        "carousel_slide_iyqUQF": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/kid-scamosciato-maroon-cover.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.1,
+            "text_color_scheme": "background-3",
+            "heading": "Scamosciata",
+            "link": "shopify:\/\/collections\/pelle-scamosciata-suede"
+          }
+        },
+        "carousel_slide_tC9t9y": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/marrone-liscia2.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.2,
+            "text_color_scheme": "background-3",
+            "heading": "Pelle liscia",
+            "link": "shopify:\/\/collections\/pelle-liscia"
+          }
+        },
+        "carousel_slide_6aVUf3": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/texture2-pitone-deadstock.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.3,
+            "text_color_scheme": "background-3",
+            "heading": "Pelle stampata rettile",
+            "link": "shopify:\/\/collections\/pelle-stampa-rettile"
+          }
+        },
+        "carousel_slide_AnhC9h": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cover-zebra-intero_90dbc03a-71cf-47f4-beb6-9264ce7a69f9.jpg",
+            "show_video": false,
+            "overlay_opacity": 0.3,
+            "text_color_scheme": "background-3",
+            "heading": "Cavallino",
+            "link": "shopify:\/\/collections\/pelle-cavallino"
+          }
+        }
+      },
+      "block_order": [
+        "carousel_slide_FAHiC7",
+        "carousel_slide_8FAnkK",
+        "carousel_slide_iyqUQF",
+        "carousel_slide_tC9t9y",
+        "carousel_slide_6aVUf3",
+        "carousel_slide_AnhC9h"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "",
+        "heading_size": "h2",
+        "columns": 5,
+        "image_ratio": "landscape",
+        "button_show": false,
+        "button_label": "",
+        "button_link": "",
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "meta": "<p>\/ m²<\/p>",
+        "products_per_page": 12,
+        "image_ratio": "square",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_collection": true,
+        "show_desc": false,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "default_open": false,
+        "enable_sorting": true,
+        "image_filter_ratio": "4\/5",
+        "image_filter_fit": "cover",
+        "image_filter_columns": 4,
+        "columns_mobile": "2",
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "1724922945a2561d7a": {
+      "type": "apps",
+      "blocks": {
+        "avada_seo_suite_avada_after_collection_block_xCw9yf": {
+          "type": "shopify:\/\/apps\/avada-seo-suite\/blocks\/avada-after-collection-block\/15507c6e-1aa3-45d3-b698-7e175e033440",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "avada_seo_suite_avada_after_collection_block_xCw9yf"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "carousel_nxU4VF",
+    "product-grid",
+    "1724922945a2561d7a"
+  ]
+}

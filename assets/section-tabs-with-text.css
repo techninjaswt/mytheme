@@ -1,0 +1,270 @@
+.twt .titles .subtitle:only-child {
+  margin-bottom: 0.8rem;
+}
+@media screen and (min-width: 750px) {
+  .twt .titles .subtitle:only-child {
+    margin-bottom: 1.6rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .twt .titles .subtitle:only-child {
+    margin-bottom: 1.6rem;
+  }
+}
+.twt .titles .heading {
+  margin-bottom: 0.8rem;
+}
+@media screen and (min-width: 750px) {
+  .twt .titles .heading {
+    margin-bottom: 1.6rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .twt .titles .heading {
+    margin-bottom: 2.4rem;
+  }
+}
+.twt__tabs {
+  position: relative;
+  padding-bottom: 0.1rem;
+}
+.twt__tabs::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.1rem;
+  background-color: rgb(var(--color-border));
+  position: absolute;
+  bottom: 0.05rem;
+  left: 0;
+}
+.twt__tabs:not(.swiper-initialized) .twt__tabs-item, .twt__tabs:not(.swiper-initialized) .twt__nav {
+  opacity: 0;
+}
+.twt__tabs .swiper-wrapper {
+  align-items: flex-end;
+}
+.twt__tabs-item {
+  width: auto;
+  margin: 0 0 -0.1rem;
+  padding: 1.6rem 0;
+  cursor: pointer;
+  color: rgba(var(--color-foreground), 0.5);
+  transition: var(--duration-default);
+  user-select: none;
+}
+@media (min-width: 990px) {
+  .twt__tabs-item {
+    padding: 2.4rem 0;
+  }
+}
+.twt__tabs-item.js-hidden {
+  pointer-events: none;
+}
+.twt__tabs-item.js-hidden::after {
+  display: none;
+}
+.twt__tabs-item::after {
+  height: 0.2rem;
+}
+.twt__tabs-item:hover {
+  color: rgb(var(--color-foreground-title));
+}
+.twt__tabs-item:hover::after {
+  width: 100%;
+}
+.twt__tabs-item[data-active] {
+  color: rgb(var(--color-foreground-title));
+}
+.twt__tabs-item[data-active]::after {
+  width: 100%;
+}
+.twt__nav {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+.twt__prev, .twt__next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 100%;
+  pointer-events: auto;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 750px) {
+  .twt__prev, .twt__next {
+    width: 5.2rem;
+  }
+}
+.twt__prev.swiper-button-disabled, .twt__next.swiper-button-disabled {
+  display: none;
+}
+.twt__prev svg, .twt__next svg {
+  width: 3rem;
+  height: 3rem;
+  transition: var(--duration-default);
+}
+.twt__prev {
+  left: 0;
+  background: linear-gradient(90deg, rgb(var(--color-background)) 0%, transparent 100%);
+}
+.twt__prev:hover svg {
+  transform: rotate(180deg) translateX(0.5rem);
+}
+.twt__prev svg {
+  transform: rotate(180deg);
+}
+.twt__next {
+  right: 0;
+  background: linear-gradient(90deg, transparent 0%, rgb(var(--color-background)) 100%);
+}
+.twt__next:hover svg {
+  transform: translateX(0.5rem);
+}
+.twt__content-item {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+.twt__content-item.no-js-flex {
+  margin-bottom: 2rem;
+}
+.twt__text {
+  max-width: 93.2rem;
+}
+.twt__text > *:first-child {
+  margin-top: 4.8rem;
+}
+.twt__text > *:last-child {
+  margin-bottom: 0;
+}
+.twt__text h1,
+.twt__text h2,
+.twt__text h3,
+.twt__text h4,
+.twt__text h5,
+.twt__text h6 {
+  margin-top: 4rem;
+  margin-bottom: 1.6rem;
+}
+.twt__text p {
+  margin-block: 1.6rem;
+}
+.twt__text ul,
+.twt__text ol {
+  margin-block: 1.6rem;
+  padding: 0;
+  padding-inline-start: 2.8rem;
+}
+.twt__text ul li,
+.twt__text ol li {
+  margin: 0;
+}
+.twt__text ul li + li,
+.twt__text ol li + li {
+  margin-top: 1.6rem;
+}
+.twt__button {
+  margin-block: 3.2rem;
+  padding-bottom: 0.2rem;
+}
+.twt__image {
+  margin-block: 3.2rem;
+}
+.twt__characteristics {
+  margin-top: 4.8rem;
+  column-gap: 2rem;
+  column-count: 1;
+}
+@media screen and (min-width: 990px) {
+  .twt__characteristics {
+    column-count: calc(var(--columns) - 1);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .twt__characteristics {
+    column-count: var(--columns);
+  }
+}
+.twt__row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 0.4rem;
+  break-inside: avoid-column;
+}
+@media screen and (min-width: 990px) {
+  .twt__row {
+    flex-direction: row;
+    gap: 1.6rem;
+  }
+}
+.twt__row-title {
+  font-weight: 500;
+}
+@media screen and (min-width: 750px) {
+  .twt__row-descr {
+    max-width: 32.4rem;
+  }
+}
+.twt__row + .twt__row {
+  margin-top: 1.6rem;
+}
+.twt__multicolumn {
+  margin-top: 4.8rem;
+}
+
+@media (prefers-color-scheme: light) {
+  .twt__image:first-child {
+    display: block;
+  }
+  .twt__image:last-child {
+    display: none;
+  }
+  .twt__image:only-child {
+    display: block;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .twt__image:first-child {
+    display: none;
+  }
+  .twt__image:last-child {
+    display: block;
+  }
+  .twt__image:only-child {
+    display: block;
+  }
+}
+[data-scheme=light] .twt__image:first-child {
+  display: block;
+}
+[data-scheme=light] .twt__image:last-child {
+  display: none;
+}
+[data-scheme=light] .twt__image:only-child {
+  display: block;
+}
+
+[data-scheme=dark] .twt__image:first-child {
+  display: none;
+}
+[data-scheme=dark] .twt__image:last-child {
+  display: block;
+}
+[data-scheme=dark] .twt__image:only-child {
+  display: block;
+}

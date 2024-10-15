@@ -1,0 +1,227 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "rich_text_YTDYjg": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_iPqdnp": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Press"
+          }
+        },
+        "heading_GbYaHx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Parlano di noi",
+            "heading_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_iPqdnp",
+        "heading_GbYaHx"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "carousel_aDCeW6": {
+      "type": "carousel",
+      "blocks": {
+        "carousel_slide_6CP7jB": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Progetto_senza_titolo_49.png",
+            "show_video": false,
+            "overlay_opacity": 0,
+            "text_color_scheme": "background-3",
+            "heading": "Zerow su Vanity Fair",
+            "link": "https:\/\/www.vanityfair.it\/article\/world-environment-day-startup-italiane-sostenibilita#ZEROW"
+          }
+        },
+        "carousel_slide_tDH7kd": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Progetto_senza_titolo_50.png",
+            "show_video": false,
+            "overlay_opacity": 0,
+            "text_color_scheme": "",
+            "heading": "Zerow su Panorama",
+            "link": "https:\/\/www.panorama.it\/zerow-start-up-riciclo-scarti"
+          }
+        },
+        "carousel_slide_Nexd7a": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Progetto_senza_titolo_51.png",
+            "show_video": false,
+            "overlay_opacity": 0,
+            "text_color_scheme": "",
+            "heading": "Zerow su Radio 105",
+            "link": "https:\/\/www.105.net\/audio\/home\/1367975\/hai-perso-105-startup-riascolta-la-storia-di-gabriele-rorandelli-ceo-co-founder-di-zerow.html"
+          }
+        }
+      },
+      "block_order": [
+        "carousel_slide_6CP7jB",
+        "carousel_slide_tDH7kd",
+        "carousel_slide_Nexd7a"
+      ],
+      "custom_css": [
+        "h3.carousel__slide-title.h4 {z-index: 2;}",
+        ".card-wrapper__link--overlay {background: linear-gradient(#fff0, #545454e8); z-index: 1; background: rgb(2, 0, 36); background: linear-gradient( 4deg, rgb(0 0 0) 0%, rgb(0 0 0 \/ 68%) 14%, rgba(255, 255, 255, 0) 100% );}"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "",
+        "heading_size": "h2",
+        "columns": 3,
+        "image_ratio": "portrait",
+        "button_show": false,
+        "button_label": "Button label",
+        "button_link": "",
+        "padding_top": "s",
+        "padding_bottom": "s"
+      }
+    },
+    "carousel_gxriJU": {
+      "type": "carousel",
+      "blocks": {
+        "carousel_slide_kht9Bi": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Progetto_senza_titolo_52.png",
+            "show_video": false,
+            "overlay_opacity": 0,
+            "text_color_scheme": "",
+            "heading": "Zerow su t24",
+            "link": "https:\/\/www.t24economia.it\/art\/la-startup-zerow-valorizza-gli-scarti-della-pelle-con-gli-studenti"
+          }
+        },
+        "carousel_slide_jaHKa7": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Progetto_senza_titolo_53.png",
+            "show_video": false,
+            "overlay_opacity": 0,
+            "text_color_scheme": "",
+            "heading": "Zerow su Fashion Network",
+            "link": "https:\/\/it.fashionnetwork.com\/news\/E-p-summit-le-novita-di-7-aziende-d-avanguardia-fra-digital-manifattura-e-tech,1623613.html"
+          }
+        },
+        "carousel_slide_WcQUdG": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Progetto_senza_titolo_54.png",
+            "show_video": false,
+            "overlay_opacity": 0,
+            "text_color_scheme": "",
+            "heading": "Zerow su LaConceria",
+            "link": "https:\/\/www.laconceria.it\/sostenibilita\/un-premio-a-zerow-la-startup-che-aiuta-a-non-sprecare-gli-scarti\/"
+          }
+        }
+      },
+      "block_order": [
+        "carousel_slide_kht9Bi",
+        "carousel_slide_jaHKa7",
+        "carousel_slide_WcQUdG"
+      ],
+      "custom_css": [
+        "h3.carousel__slide-title.h4 {z-index: 2;}",
+        ".card-wrapper__link--overlay {background: linear-gradient(#fff0, #545454e8); z-index: 1; background: rgb(2, 0, 36); background: linear-gradient( 4deg, rgb(0 0 0) 0%, rgb(0 0 0 \/ 68%) 14%, rgba(255, 255, 255, 0) 100% );}"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "",
+        "heading_size": "h2",
+        "columns": 3,
+        "image_ratio": "portrait",
+        "button_show": false,
+        "button_label": "Button label",
+        "button_link": "",
+        "padding_top": "s",
+        "padding_bottom": "s"
+      }
+    },
+    "carousel_m3tGNn": {
+      "type": "carousel",
+      "blocks": {
+        "carousel_slide_rfTcTQ": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Progetto_senza_titolo_55.png",
+            "show_video": false,
+            "overlay_opacity": 0,
+            "text_color_scheme": "",
+            "heading": "Zerow su La Nazione",
+            "link": "https:\/\/luce.lanazione.it\/scienze-e-culture\/zerow-la-startup-che-da-nuova-vita-agli-scarti-della-moda-ips1f4vn"
+          }
+        },
+        "carousel_slide_HWkha9": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Progetto_senza_titolo_56.png",
+            "show_video": false,
+            "overlay_opacity": 0,
+            "text_color_scheme": "",
+            "heading": "Zerow su StartupItalia",
+            "link": "https:\/\/startupitalia.eu\/impact\/cosa-fa-startup-zerow\/"
+          }
+        },
+        "carousel_slide_qBcLYt": {
+          "type": "carousel_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Progetto_senza_titolo_57.png",
+            "show_video": false,
+            "overlay_opacity": 0,
+            "text_color_scheme": "",
+            "heading": "Zerow su la Repubblica",
+            "link": "https:\/\/firenze.repubblica.it\/cronaca\/2024\/01\/24\/news\/startup_fondazione_cr_firenze_nana_bianca-421966223\/"
+          }
+        }
+      },
+      "block_order": [
+        "carousel_slide_rfTcTQ",
+        "carousel_slide_HWkha9",
+        "carousel_slide_qBcLYt"
+      ],
+      "custom_css": [
+        "h3.carousel__slide-title.h4 {z-index: 2;}",
+        ".card-wrapper__link--overlay {background: linear-gradient(#fff0, #545454e8); z-index: 1; background: rgb(2, 0, 36); background: linear-gradient( 4deg, rgb(0 0 0) 0%, rgb(0 0 0 \/ 68%) 14%, rgba(255, 255, 255, 0) 100% );}"
+      ],
+      "settings": {
+        "subheading": "",
+        "heading": "",
+        "heading_size": "h2",
+        "columns": 3,
+        "image_ratio": "portrait",
+        "button_show": false,
+        "button_label": "Button label",
+        "button_link": "",
+        "padding_top": "s",
+        "padding_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_YTDYjg",
+    "carousel_aDCeW6",
+    "carousel_gxriJU",
+    "carousel_m3tGNn"
+  ]
+}

@@ -1,0 +1,457 @@
+{{ 'section-carousel.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'carousel.js' | asset_url }}" defer="defer"></script>
+
+{%- style -%}
+  {% render 'section-padding' %}
+{%- endstyle -%}
+
+{% liquid
+  if section.settings.image_ratio == 'landscape'
+    assign padding_bottom = 50
+  endif
+  if section.settings.image_ratio == 'portrait'
+    assign padding_bottom = 140
+  endif
+  if section.settings.image_ratio == 'square'
+    assign padding_bottom = 100
+  endif
+%}
+
+<div
+  class="carousel section-{{ section.id }}-padding"
+  style="--padding-bottom: {{ padding_bottom }}%"
+>
+  <div class="container">
+    {%- if section.settings.subheading != blank and section.settings.heading != blank -%}
+      <div class="carousel__subtitle subtitle">
+        {{ section.settings.subheading }}
+      </div>
+    {%- endif -%}
+    <div class="carousel__wrapper {% if section.settings.heading == blank %} carousel__wrapper_no-heading {% endif %}">
+      {%- if section.settings.subheading != blank or section.settings.heading != blank -%}
+        <div class="carousel__top">
+          {%- if section.settings.subheading != blank and section.settings.heading == blank -%}
+            <div class="carousel__subtitle subtitle">
+              {{ section.settings.subheading }}
+            </div>
+          {%- endif -%}
+          {%- if section.settings.heading != blank -%}
+            <h2 class="carousel__title {{ section.settings.heading_size }}">
+              {{ section.settings.heading }}
+            </h2>
+          {%- endif -%}
+        </div>
+      {% endif %}
+
+      {%- if section.settings.button_show -%}
+        <a
+          {% if section.settings.button_link != blank %}
+            href="{{ section.settings.button_link }}"
+          {% endif %}
+          class="carousel__button button button--simple button--arrow focus-inset"
+          {% if section.settings.button_link == blank %}
+            aria-disabled="true"
+          {% endif %}
+        >
+          <span>{{ section.settings.button_label }}</span>
+          {% render 'icon-button-arrow' %}
+        </a>
+      {%- endif -%}
+
+      <div class="carousel__content">
+        <div class="swiper carousel__slider" data-columns="{{  section.settings.columns }}">
+          <div class="swiper-wrapper">
+            {%- for block in section.blocks -%}
+              <div
+                class="
+                  swiper-slide carousel__slide
+                  color-{{ block.settings.text_color_scheme }} background
+                  carousel__slide--{{ section.settings.columns }}
+                "
+                style="
+                  --opacity-slide: {{ block.settings.overlay_opacity }};
+                  --opacity-slide-hover: {{ block.settings.overlay_opacity | plus: 0.1 }}
+                "
+                {{ block.shopify_attributes }}
+              >
+                <div class="carousel__slide-content">
+                  <div class="carousel__slide-image">
+                    {% if block.settings.image != blank and block.settings.show_video == false or block.settings.video == blank %}
+                      {% liquid
+                        assign aspect_ratio = block.settings.image.aspect_ratio
+
+                        case section.settings.image_ratio
+                          when 'portrait'
+                            assign image_ratio = 1.4
+                          when 'square'
+                            assign image_ratio = 1
+                          else
+                            assign image_ratio = 0.5
+                        endcase
+                      %}
+
+                      {% if aspect_ratio > image_ratio and block.settings.image.width > block.settings.image.height %}
+                        {% case section.settings.columns %}
+                          {% when 5 %}
+                            {% capture sizes %}
+															(min-width: 1360px) calc((100vw - 128px) / 5 * {{ aspect_ratio }} * {{ image_ratio }}), (min-width: 1200px) calc((100vw - 40px) / 4 * {{ aspect_ratio }} * {{ image_ratio }}), (min-width: 990px) calc((100vw - 40px) / 3 * {{ aspect_ratio }} * {{ image_ratio }}), (min-width: 576px) calc((100vw - 40px) / 2 * {{ aspect_ratio }} * {{ image_ratio }}), calc((100vw - 40px) * {{ aspect_ratio }} * {{ image_ratio }})
+														{% endcapture %}
+                          {% when 4 %}
+                            {% capture sizes %}
+															(min-width: 1360px) calc((100vw - 128px) / 4 * {{ aspect_ratio }} * {{ image_ratio }}), (min-width: 990px) calc((100vw - 40px) / 3 * {{ aspect_ratio }} * {{ image_ratio }}), (min-width: 576px) calc((100vw - 40px) / 2 * {{ aspect_ratio }} * {{ image_ratio }}), calc((100vw - 40px) * {{ aspect_ratio }} * {{ image_ratio }})
+														{% endcapture %}
+                          {% when 3 %}
+                            {% capture sizes %}
+															(min-width: 990px) calc((100vw - 40px) / 3 * {{ aspect_ratio }} * {{ image_ratio }}), (min-width: 576px) calc((100vw - 40px) / 2 * {{ aspect_ratio }} * {{ image_ratio }}), calc((100vw - 40px) * {{ aspect_ratio }} * {{ image_ratio }})
+														{% endcapture %}
+                          {% when 2 %}
+                            {% capture sizes %}
+															(min-width: 576px) calc((100vw - 40px) / 2 * {{ aspect_ratio }} * {{ image_ratio }}), calc((100vw - 40px) * {{ aspect_ratio }} * {{ image_ratio }})
+														{% endcapture %}
+                          {% else %}
+                            {% capture sizes %}
+															calc((100vw - 40px) * {{ aspect_ratio }} * {{ image_ratio }})
+														{% endcapture %}
+                        {% endcase %}
+                      {% elsif aspect_ratio > image_ratio
+                        and block.settings.image.width < block.settings.image.height
+                      %}
+                        {% case section.settings.columns %}
+                          {% when 5 %}
+                            {% capture sizes %}
+															(min-width: 1360px) calc((100vw - 128px) / 5 / {{ aspect_ratio }} * {{ image_ratio }}), (min-width: 1200px) calc((100vw - 128px) / 4 / {{ aspect_ratio }} * {{ image_ratio }}), (min-width: 990px) calc((100vw - 40px) / 3 / {{ aspect_ratio }} * {{ image_ratio }}), (min-width: 576px) calc((100vw - 40px) / 2 / {{ aspect_ratio }} * {{ image_ratio }}), calc((100vw - 40px) / {{ aspect_ratio }} * {{ image_ratio }})
+														{% endcapture %}
+                          {% when 4 %}
+                            {% capture sizes %}
+															(min-width: 1360px) calc((100vw - 128px) / 4 / {{ aspect_ratio }}) * {{ image_ratio }}, (min-width: 990px) calc((100vw - 40px) / 3 / {{ aspect_ratio }} * {{ image_ratio }}), (min-width: 576px) calc((100vw - 40px) / 2 / {{ aspect_ratio }} * {{ image_ratio }}), calc((100vw - 40px) / {{ aspect_ratio }} * {{ image_ratio }})
+														{% endcapture %}
+                          {% when 3 %}
+                            {% capture sizes %}
+															(min-width: 990px) calc((100vw - 40px) / 3 / {{ aspect_ratio }} * {{ image_ratio }}), (min-width: 576px) calc((100vw - 40px) / 2 / {{ aspect_ratio }} * {{ image_ratio }}), calc((100vw - 40px) / {{ aspect_ratio }} * {{ image_ratio }})
+														{% endcapture %}
+                          {% when 2 %}
+                            {% capture sizes %}
+															(min-width: 576px) calc((100vw - 40px) / 2 / {{ aspect_ratio }} * {{ image_ratio }}), calc((100vw - 40px) / {{ aspect_ratio }} * {{ image_ratio }})
+														{% endcapture %}
+                          {% else %}
+                            {% capture sizes %}
+															calc((100vw - 40px) / {{ aspect_ratio }} * {{ image_ratio }})
+														{% endcapture %}
+                        {% endcase %}
+                      {% else %}
+                        {% case section.settings.columns %}
+                          {% when 5 %}
+                            {% capture sizes %} 
+															(min-width: 1360px) calc((100vw - 128px) / 5 ), (min-width: 1200px) calc((100vw - 128px) / 4), (min-width: 990px) calc((100vw - 40px) / 3), (min-width: 576px) calc((100vw - 40px) / 2), calc((100vw - 40px))
+														{% endcapture %}
+                          {% when 4 %}
+                            {% capture sizes %} 
+															(min-width: 1360px) calc((100vw - 128px) / 4), (min-width: 990px) calc((100vw - 40px) / 3), (min-width: 576px) calc((100vw - 40px) / 2), calc((100vw - 40px))
+														{% endcapture %}
+                          {% when 3 %}
+                            {% capture sizes %} 
+															(min-width: 990px) calc((100vw - 40px) / 3), (min-width: 576px) calc((100vw - 40px) / 2), calc((100vw - 40px))
+														{% endcapture %}
+                          {% when 2 %}
+                            {% capture sizes %} 
+															(min-width: 576px) calc((100vw - 40px) / 2), calc((100vw - 40px))
+														{% endcapture %}
+                          {% else %}
+                            {% capture sizes %} 
+															calc((100vw - 40px))
+														{% endcapture %}
+                        {% endcase %}
+                      {% endif %}
+
+                      {{
+                        block.settings.image
+                        | image_url: width: block.settings.image.width
+                        | image_tag:
+                          loading: 'lazy',
+                          sizes: sizes,
+                          widths: '360, 535, 600, 720, 940, 1066, 1200, 1400, 1600, 1800, 2000, 2200, 2400, 2600, 2800, 3000, 3200, 3400, 3600, 3800'
+                      }}
+                    {% endif %}
+
+                     {%- if block.settings.show_video == true and block.settings.video != blank -%}
+                      {% case section.settings.columns %}
+                        {% when 5 %}
+                          {% assign image_size = '900x' %}
+                        {% when 4 %}
+                          {% assign image_size = '1100x' %}
+                        {% when 3 %}
+                          {% assign image_size = '1500x' %}
+                        {% when 2 %}
+                          {% assign image_size = '2000x' %}
+                        {% else %}
+                          {% assign image_size = '2600x' %}
+                      {% endcase %}
+                      {{ block.settings.video | video_tag: image_size: image_size, autoplay: false, loop: true, muted: true }}
+                    {% endif %}
+                  </div>
+                  {% if block.settings.heading != blank %}
+                    <h3 class="carousel__slide-title h4">{{ block.settings.heading }}</h3>
+                  {% endif %}
+                  {% if block.settings.link != blank %}
+                    <a href="{{ block.settings.link }}" class="link card-wrapper__link--overlay" aria-label="{{ block.settings.heading }}"></a>
+                  {% endif %}
+                </div>
+              </div>
+            {%- endfor -%}
+          </div>
+          <div class="carousel__slider-nav no-js-hidden">
+            <div class="swiper-button-prev focus-inset">
+              {% render 'icon-caret-left' %}
+            </div>
+            <div class="swiper-button-next focus-inset">
+              {% render 'icon-caret-right' %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.carousel.name",
+  "tag": "section",
+  "class": "spaced-section section-carousel",
+  "enabled_on": {
+    "templates": ["*"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "default": "Subheading",
+      "label": "t:sections.carousel.settings.subheading.label"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "t:sections.carousel.settings.heading.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h3",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h2",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "range",
+      "id": "columns",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 4,
+      "label": "t:sections.carousel.settings.columns.label"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "value": "landscape",
+          "label": "t:sections.all.card.image_ratio.options__1.label"
+        },
+        {
+          "value": "portrait",
+          "label": "t:sections.all.card.image_ratio.options__2.label"
+        },
+        {
+          "value": "square",
+          "label": "t:sections.all.card.image_ratio.options__3.label"
+        }
+      ],
+      "default": "portrait",
+      "label": "t:sections.all.card.image_ratio.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.button.header_button.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_show",
+      "default": true,
+      "label": "t:sections.all.button.button_show.label"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "Button label",
+      "label": "t:sections.all.button.button_label.label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "t:sections.all.button.button_link.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.section-padding.header.content"
+    },
+    {
+      "type": "select",
+      "id": "padding_top",
+      "options": [
+        {
+          "value": "no-indent",
+          "label": "t:sections.all.section-padding.options__1.label"
+        },
+        {
+          "value": "xs",
+          "label": "t:sections.all.section-padding.options__2.label"
+        },
+        {
+          "value": "s",
+          "label": "t:sections.all.section-padding.options__3.label"
+        },
+        {
+          "value": "m",
+          "label": "t:sections.all.section-padding.options__4.label"
+        },
+        {
+          "value": "l",
+          "label": "t:sections.all.section-padding.options__5.label"
+        },
+        {
+          "value": "xl",
+          "label": "t:sections.all.section-padding.options__6.label"
+        }
+      ],
+      "default": "m",
+      "label": "t:sections.all.section-padding.padding_top.label"
+    },
+    {
+      "type": "select",
+      "id": "padding_bottom",
+      "options": [
+        {
+          "value": "no-indent",
+          "label": "t:sections.all.section-padding.options__1.label"
+        },
+        {
+          "value": "xs",
+          "label": "t:sections.all.section-padding.options__2.label"
+        },
+        {
+          "value": "s",
+          "label": "t:sections.all.section-padding.options__3.label"
+        },
+        {
+          "value": "m",
+          "label": "t:sections.all.section-padding.options__4.label"
+        },
+        {
+          "value": "l",
+          "label": "t:sections.all.section-padding.options__5.label"
+        },
+        {
+          "value": "xl",
+          "label": "t:sections.all.section-padding.options__6.label"
+        }
+      ],
+      "default": "m",
+      "label": "t:sections.all.section-padding.padding_bottom.label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "carousel_slide",
+      "name": "t:sections.carousel.blocks.carousel_slide.name",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.carousel.blocks.carousel_slide.settings.image.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_video",
+          "label": "t:sections.media-slideshow.blocks.media_slide.settings.show_video.label",
+          "default": false
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "t:sections.media-slideshow.blocks.media_slide.settings.video.label"
+        },
+        {
+          "type": "range",
+          "id": "overlay_opacity",
+          "min": 0,
+          "max": 1,
+          "step": 0.1,
+          "default": 0.5,
+          "label": "t:sections.all.overlay_opacity.label"
+        },
+        {
+          "type": "color_scheme",
+          "id": "text_color_scheme",
+          "default": "background-3",
+          "label": "t:sections.all.text_color_scheme.label"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "t:sections.carousel.blocks.carousel_slide.settings.heading.label",
+          "default": "Some heading"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:sections.carousel.blocks.carousel_slide.settings.link.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.carousel.name",
+      "blocks": [
+        {
+          "type": "carousel_slide"
+        },
+        {
+          "type": "carousel_slide"
+        },
+        {
+          "type": "carousel_slide"
+        },
+        {
+          "type": "carousel_slide"
+        },
+        {
+          "type": "carousel_slide"
+        },
+        {
+          "type": "carousel_slide"
+        },
+        {
+          "type": "carousel_slide"
+        },
+        {
+          "type": "carousel_slide"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

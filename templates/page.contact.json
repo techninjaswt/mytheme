@@ -1,0 +1,40 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "custom_css": [
+        "@media screen and (min-width: 900px) {.contact-form--right .contact-form__inner {align-items: center; justify-content: space-between; flex-direction: row-reverse; } .contact-form__contacts {max-width: 45vw; } .contact-form__wrapper {max-width: 50%;}}"
+      ],
+      "settings": {
+        "position": "right",
+        "heading": "Modulo di Contatto",
+        "heading_size": "h1",
+        "text": "Per qualsiasi domanda o informazione sui nostri servizi compila il form. Sarai ricontattato il prima possibile dal nostro team.",
+        "additional_text": "",
+        "button_style": "primary",
+        "image": "shopify:\/\/shop_images\/details-s0029_1.jpg",
+        "overlay_opacity": 0.3,
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "custom_liquid_KEdn3H": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d2881.4582704554573!2d11.158230676764319!3d43.76334517109723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a5b2836d87d49%3A0xa80a4929fcf9116d!2sZerolab%20-%20Hub%20Recupero%20Pelle%20%2F%20Coworking%20%2F%20Design%20Studio!5e0!3m2!1sit!2sit!4v1721317328893!5m2!1sit!2sit\" width=\"100%\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"><\/iframe>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "form",
+    "custom_liquid_KEdn3H"
+  ]
+}

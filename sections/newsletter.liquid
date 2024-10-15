@@ -1,153 +1,253 @@
-<section id="section-{{ section.id }}">
-  {%- capture mobile_size -%}750x{% if section.settings.image.height >= 960 %}960{% else %}{{ section.settings.image.height }}{% endif %}{%- endcapture -%}
+{{ 'section-newsletter.css' | asset_url | stylesheet_tag }}
 
-  <div class="FlexboxIeFix">
-    <div class="ImageHero {% if section.settings.section_size != 'normal' %}ImageHero--{{ section.settings.section_size }}{% endif %} ImageHero--newsletter" {% if section.settings.image %}style="background: url({{ section.settings.image | img_url: '1x1' }})"{% endif %}>
-      <div class="ImageHero__ImageWrapper">
-        <div class="ImageHero__Image Image--lazyLoad Image--zoomOut"
-             data-optimumx="1.4"
-             data-expand="-150"
-             {% if section.settings.image %}data-bgset="{{ section.settings.image | img_url: mobile_size, crop: 'center' }} 750w, {{ section.settings.image | img_url: '1000x' }} 1000w, {{ section.settings.image | img_url: '1500x' }} 1500w"{% endif %}>
-        </div>
+{%- style -%}
+  {% render 'section-padding' %}
+{%- endstyle -%}
 
-        <noscript>
-          <div class="ImageHero__Image" style="background-image: url({{ section.settings.image | img_url: '1000x' }})"></div>
-        </noscript>
-
-        {%- unless section.settings.image != blank -%}
-          <div class="PlaceholderBackground PlaceholderSvg--dark">
-            {{ 'lifestyle-1' | placeholder_svg_tag: 'PlaceholderBackground__Svg' }}
+<div class="newsletter section-{{ section.id }}-padding">
+  <div class="container">
+    <div class="newsletter__inner newsletter__inner--{{ section.settings.align_content }}">
+      {%- if section.settings.image != blank -%}
+        {% capture sizes %}
+					(min-width: 1100px) 1920px, calc((100vw - 20px))
+				{% endcapture %}
+        {{
+          section.settings.image
+          | image_url: width: 956
+          | image_tag: loading: 'lazy', sizes: sizes, widths: '360, 535, 720, 956', class: 'newsletter__image'
+        }}
+      {%- endif -%}
+      <div class="newsletter__form">
+        <h2 class="newsletter__title title--section-m-none {{ section.settings.heading_size }}">
+          {{ section.settings.heading }}
+        </h2>
+        {% form 'customer', class: 'newsletter-form' %}
+          <div class="newsletter-form__inner">
+            <input type="hidden" name="contact[tags]" value="newsletter">
+            <div class="newsletter-form__field-wrapper">
+              <div class="field">
+                <input
+                  id="NewsletterForm--{{ section.id }}"
+                  type="email"
+                  name="contact[email]"
+                  class="field__input field"
+                  value="{{ form.email }}"
+                  aria-required="true"
+                  autocorrect="off"
+                  autocapitalize="off"
+                  autocomplete="email"
+                  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                  {% if form.errors %}
+                    autofocus
+                    aria-invalid="true"
+                    aria-describedby="Newsletter-error--{{ section.id }}"
+                  {% elsif form.posted_successfully? %}
+                    aria-describedby="Newsletter-success--{{ section.id }}"
+                  {% endif %}
+                  placeholder="{{ 'newsletter.label' | t }}"
+                  required
+                >
+                <label class="visually-hidden" for="NewsletterForm--{{ section.id }}">
+                  {{ 'newsletter.label' | t }}
+                </label>
+              </div>
+              {%- if form.errors -%}
+                <small
+                  class="newsletter-form__message form__message"
+                  id="Newsletter-error--{{ section.id }}"
+                >
+                  {%- render 'icon-error' -%}
+                  {{- form.errors.translated_fields.email | capitalize }}
+                  {{ form.errors.messages.email -}}
+                </small>
+              {%- endif -%}
+            </div>
+            <button
+              type="submit"
+              class="newsletter__button button button--{{ section.settings.button_style }} focus-inset"
+              name="commit"
+            >
+              <span>{{ 'newsletter.button_label' | t }}</span>
+            </button>
           </div>
-        {%- endunless -%}
-      </div>
-
-      <div class="ImageHero__ContentOverlay">
-        <header class="SectionHeader SectionHeader--center">
-          {%- if section.settings.subheading != blank -%}
-            <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
-          {%- endif -%}
-
-          {%- if section.settings.title != blank -%}
-            <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
-          {%- endif -%}
-
-          {%- if section.settings.content != blank -%}
-            <div class="SectionHeader__Description">
-              {{ section.settings.content }}
-            </div>
-          {%- endif -%}
-        </header>
-
-        {%- assign newsletter_id = 'footer-' | append: section.id -%}
-
-        {%- form 'customer', id: newsletter_id, class: 'Newsletter Form' -%}
           {%- if form.posted_successfully? -%}
-            <p class="Form__Alert Alert Alert--success">{{ 'home_page.newsletter.success' | t }}</p>
-          {%- else -%}
-            {%- if form.errors -%}
-              <p class="Form__Alert Alert Alert--error">{{ form.errors.messages['email'] }}</p>
-            {%- endif -%}
-
-            <div class="Newsletter__Inner">
-              <input type="hidden" name="contact[tags]" value="newsletter">
-              <input type="email" name="contact[email]" class="Form__Input" aria-label="{{ 'home_page.newsletter.input' | t }}" placeholder="{{ 'home_page.newsletter.input' | t }}" required>
-              <button type="submit" class="Form__Submit Button Button--primary">{{ 'home_page.newsletter.submit' | t }}</button>
-            </div>
+            <h3
+              class="newsletter-form__message newsletter-form__message--success form__message"
+              id="Newsletter-success--{{ section.id }}"
+              tabindex="-1"
+              autofocus
+            >
+              {% render 'icon-success' -%}
+              {{- 'newsletter.success' | t }}
+            </h3>
           {%- endif -%}
-        {%- endform -%}
+        {% endform %}
+        <div class="newsletter__text rte">
+          {{ section.settings.newsletter_text }}
+        </div>
       </div>
     </div>
   </div>
-</section>
-
-<style>
-  #section-{{ section.id }},
-  #section-{{ section.id }} .Heading {
-    color: {{ section.settings.text_color }};
-  }
-
-  #section-{{ section.id }} .Form__Submit {
-    border-color: {{ section.settings.text_color }};
-    color: {{ section.settings.button_color }};
-  }
-
-  #section-{{ section.id }} .Form__Submit::before {
-    background-color: {{ section.settings.text_color }};
-  }
-
-  @media (-moz-touch-enabled: 0), (hover: hover) {
-    #section-{{ section.id }} .Form__Submit:hover {
-      color: {{ section.settings.text_color }};
-    }
-  }
-</style>
+</div>
 
 {% schema %}
 {
-  "name": "Newsletter",
+  "name": "t:sections.newsletter.name",
+  "tag": "section",
+  "class": "spaced-section",
+  "enabled_on": {
+    "templates": ["*"]
+  },
   "settings": [
     {
       "type": "select",
-      "id": "section_size",
-      "label": "Section size",
+      "id": "align_content",
       "options": [
         {
-          "value": "small",
-          "label": "Small"
+          "value": "left",
+          "label": "t:sections.newsletter.settings.align_content.options__1.label"
         },
         {
-          "value": "normal",
-          "label": "Normal"
-        },
-        {
-          "value": "large",
-          "label": "Large"
+          "value": "right",
+          "label": "t:sections.newsletter.settings.align_content.options__2.label"
         }
       ],
-      "default": "small"
+      "default": "left",
+      "label": "t:sections.newsletter.settings.align_content.label"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Heading for subscribe form",
+      "label": "t:sections.newsletter.settings.heading.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h3",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h2",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "newsletter_text",
+      "default": "Additional text for subscribe form.",
+      "label": "t:sections.newsletter.settings.newsletter_text.label"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "options": [
+        {
+          "value": "primary",
+          "label": "t:sections.all.button.button_style.options__1.label"
+        },
+        {
+          "value": "secondary",
+          "label": "t:sections.all.button.button_style.options__2.label"
+        },
+        {
+          "value": "tertiary",
+          "label": "t:sections.all.button.button_style.options__3.label"
+        }
+      ],
+      "default": "primary",
+      "label": "t:sections.all.button.button_style.label"
     },
     {
       "type": "image_picker",
       "id": "image",
-      "label": "Image",
-      "info": "1500 x 800px jpg recommended"
+      "label": "t:sections.image-with-text.settings.image.label"
     },
     {
-      "type": "color",
-      "id": "text_color",
-      "label": "Text",
-      "default": "#ffffff"
+      "type": "paragraph",
+      "content": "t:sections.newsletter.settings.paragraph.content"
     },
     {
-      "type": "color",
-      "id": "button_color",
-      "label": "Button text",
-      "default": "#000000"
+      "type": "header",
+      "content": "t:sections.all.section-padding.header.content"
     },
     {
-      "type": "text",
-      "id": "subheading",
-      "label": "Sub-heading",
-      "default": "Keep updated"
+      "type": "select",
+      "id": "padding_top",
+      "options": [
+        {
+          "value": "no-indent",
+          "label": "t:sections.all.section-padding.options__1.label"
+        },
+        {
+          "value": "xs",
+          "label": "t:sections.all.section-padding.options__2.label"
+        },
+        {
+          "value": "s",
+          "label": "t:sections.all.section-padding.options__3.label"
+        },
+        {
+          "value": "m",
+          "label": "t:sections.all.section-padding.options__4.label"
+        },
+        {
+          "value": "l",
+          "label": "t:sections.all.section-padding.options__5.label"
+        },
+        {
+          "value": "xl",
+          "label": "t:sections.all.section-padding.options__6.label"
+        }
+      ],
+      "default": "m",
+      "label": "t:sections.all.section-padding.padding_top.label"
     },
     {
-      "type": "text",
-      "id": "title",
-      "label": "Heading",
-      "default": "Newsletter"
-    },
-    {
-      "type": "richtext",
-      "id": "content",
-      "label": "Text",
-      "default": "<p>A short sentence describing what someone will receive by subscribing</p>"
+      "type": "select",
+      "id": "padding_bottom",
+      "options": [
+        {
+          "value": "no-indent",
+          "label": "t:sections.all.section-padding.options__1.label"
+        },
+        {
+          "value": "xs",
+          "label": "t:sections.all.section-padding.options__2.label"
+        },
+        {
+          "value": "s",
+          "label": "t:sections.all.section-padding.options__3.label"
+        },
+        {
+          "value": "m",
+          "label": "t:sections.all.section-padding.options__4.label"
+        },
+        {
+          "value": "l",
+          "label": "t:sections.all.section-padding.options__5.label"
+        },
+        {
+          "value": "xl",
+          "label": "t:sections.all.section-padding.options__6.label"
+        }
+      ],
+      "default": "m",
+      "label": "t:sections.all.section-padding.padding_bottom.label"
     }
   ],
   "presets": [
     {
-      "category": "Promotional",
-      "name": "Newsletter",
-      "settings": {}
+      "name": "Newsletter"
     }
   ]
 }

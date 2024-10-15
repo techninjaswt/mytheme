@@ -1,0 +1,32 @@
+{
+  "parent": "cart.json",
+  "context": {
+    "market": "it"
+  },
+  "sections": {
+    "cart-items": {
+      "settings": {
+        "show_cart_note": false
+      },
+      "blocks": {
+        "fatturify_app_embed_hCCJw": {
+          "type": "shopify:\/\/apps\/fatturify\/blocks\/app-embed\/a9e8f601-54b2-44ee-aabf-19635b58750e",
+          "disabled": false,
+          "settings": {
+            "is_required": false,
+            "checkout_id": "checkout",
+            "label": "Inserisci i dati per la fatturazione",
+            "bg_color": "#6a7e2c",
+            "text_color": "#FFF",
+            "button_style": ""
+          }
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "fatturify_app_embed_hCCJw",
+        "buttons"
+      ]
+    }
+  }
+}

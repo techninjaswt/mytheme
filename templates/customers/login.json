@@ -1,0 +1,17 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-login",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/manichino-S49428.jpg",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
