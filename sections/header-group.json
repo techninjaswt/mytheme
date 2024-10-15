@@ -67,38 +67,11 @@
       "settings": {
         "custom_liquid": "<style> \n.image-with-text__media video {\n  filter: brightness(0.5);\n}\nspan.price-item.price-item--regular {\n    font-size: 1.4em;\n    font-weight: 500;\n}\n\n.avada-after-collection {\n  display: none !important;\n}\n.bebas-neue-regular {\n  font-family: \"Bebas Neue\", sans-serif;\n  font-weight: 400;\n  font-style: normal;\n}\n\n.collection-hero__description{\nmax-width:100%!important;\nmargin-bottom:3em;\n}\nul.list-menu.list-menu--inline.h2m-menu-nav.h2m-menu-align--left.h2m-menu__desktop.h2m-menu-over-hidden.h2m--arrow-rotate-on-active li a {\n    background: none!important;\n}\n@media (max-width: 768px) {\n.product__media-list-wrapper{\nmax-height:44vh!important;\n}\n.product__media-item.swiper-slide img {\n    height: 44vh!important;\n}\n.carousel-track{\n                padding-left: 28em;\n            }\n  .media-slideshow__content--bottom .media-slideshow__content-wrapper {\n    margin: auto;\n    text-align: center;\n  }\n  span.media-slideshow__overlay.hover-effect {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n  }\n        }\n\n@media (max-width: 768px) {\n.swiper.carousel__slider.swiper-initialized.swiper-horizontal.swiper-ios.swiper-watch-progress.swiper-backface-hidden .swiper-wrapper{\npadding-bottom:15px!important;                                }\n}\n</style>\n\n<script>\n// Funzione che esegue il codice dopo che la pagina è stata completamente caricata\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n    // Seleziona l'elemento <label> con un attributo 'for' specifico\n    var label = document.querySelector('label[for=\"template--22589516611928__main-2-0\"]');\n    \n    // Verifica se l'elemento esiste, poi cambia il testo\n    if (label) {\n        label.textContent = \"Campione gratuito\";\n    }\n});\n</script>\n<script>\ndocument.addEventListener('DOMContentLoaded', function () {\n  // Funzione per spostare l'elemento\n  function moveTitle() {\n    const productTitle = document.querySelector('h1.product__title.h3');\n    const productMain = document.querySelector('div.product__main');\n\n    // Verifica che gli elementi esistano e che siamo su mobile\n    if (productTitle && productMain && window.matchMedia('(max-width: 768px)').matches) {\n      // Sposta <h1> prima di <div class=\"product__main\">\n      productMain.parentNode.insertBefore(productTitle, productMain);\n    }\n  }\n\n  // Esegui la funzione moveTitle all'inizio\n  moveTitle();\n\n  // Aggiungi un listener per rilevare cambiamenti nella dimensione della finestra\n  window.addEventListener('resize', moveTitle);\n});\n\n</script>\n<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link href=\"https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap\" rel=\"stylesheet\">"
       }
-    },
-    "featured_collections_keWrNr": {
-      "type": "featured-collections",
-      "blocks": {
-        "collection_kUhqN8": {
-          "type": "collection",
-          "settings": {
-            "collection": "best-seller",
-            "title": "",
-            "grid_items_count": 8,
-            "button_text": "View all products"
-          }
-        }
-      },
-      "block_order": [
-        "collection_kUhqN8"
-      ],
-      "settings": {
-        "title": "Featured collection",
-        "layout_mode": "grid",
-        "show_product_info": true,
-        "show_vendor": false,
-        "show_color_swatch": false,
-        "grid_mobile_items_per_row": "2",
-        "grid_desktop_items_per_row": 4
-      }
     }
   },
   "order": [
     "announcement-bar",
     "header",
-    "custom_liquid_B9YRca",
-    "featured_collections_keWrNr"
+    "custom_liquid_B9YRca"
   ]
 }
